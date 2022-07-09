@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Solutions Architect Resources</title>
-    <link>https://architect.proyectoomega.es/</link>
-    <description>Recent content on Solutions Architect Resources</description>
+    <title>API on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/api/</link>
+    <description>Recent content in API on Solutions Architect Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Proyecto Omega</copyright>
-    <lastBuildDate>Sun, 03 Apr 2022 08:16:01 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appsync Mock</title>
       <link>https://architect.proyectoomega.es/api/graphql/appsyncmock/</link>
@@ -19,15 +19,6 @@ amplify mock api Sample mutation
 mutation MyMutation {  createWebnavigation(input: {navpage: &amp;#34;sample&amp;#34;, updatedAt: &amp;#34;2022&amp;#34;}) {  navpage  updatedAt  } } Sample list
 query MyQuery {  listWebnavigations {  items {  createdAt  id  navpage  updatedAt  }  } } Testing with postman  Create a POST REQUEST URL http://192.168.1.220:20002/graphql Add auth  Key: x-api-key
 Value: ccccc 4. body (check graphql)</description>
-    </item>
-    
-    <item>
-      <title>Visible</title>
-      <link>https://architect.proyectoomega.es/blogcategory/file/</link>
-      <pubDate>Sun, 26 Dec 2021 15:51:42 +0100</pubDate>
-      
-      <guid>https://architect.proyectoomega.es/blogcategory/file/</guid>
-      <description>Building Visible. Use Draft for draft version</description>
     </item>
     
   </channel>
