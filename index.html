@@ -236,12 +236,6 @@ if (!doNotTrack) {
           	},
           	
           	{
-          		value: "ddddd",
-          		label: "<p>Appsync </p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/appsyncmock\/"
-          	},
-          	
-          	{
           		value: "IaC",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/iac\/"
@@ -254,9 +248,9 @@ if (!doNotTrack) {
           	},
           	
           	{
-          		value: "Terraform Staging",
-          		label: "<p>Intro I am going to use a terraform project to deploy resources in three environments, dev, staging and production. There are several alternatives. First one will be using several directories with variables\nOption 1. Step 1. Create a folder tree Create a folder tree as follows\nyourproject │ ├── modules │ ├── prod │ └── staging We can create three VPC one per environment. To do dat first we are going to create a moudule for vpc under modules folder. We can create a subfolder called vpc_module and create main and variable tf files\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod └── staging </p>",
-          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformstaging\/"
+          		value: "Terraform Modules",
+          		label: "<p>Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources\n VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.\nThe idea is that it will be a variable that will replace the CIDR blocks acording the environment.\nIn other words, when creating Production it will use 10.1.0.0 network and when creating Staging it wil use 10.2.0.0.\nStep 1. Create a folder tree  Create a folder tree as follows\nyourproject │ ├── modules │ ├── prod │ └── staging Under modules directory I am going to create a reusable module for VPC and it\u0026rsquo;s subnets. For that purpose I\u0026rsquo;ll create a vpc_module folder that will contain main.tf and variables as follows.\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod └── staging Step 2. Creating the VPC Module  Content of modules\/vpc_module\/variables.tf Here we will define the network default address\nvariable \u0026#34;vpc_cidr\u0026#34; {  type = string  default = \u0026#34;10.1.0.0\/16\u0026#34; }  Explanation: This vpc_cidr variable will be replaced in the main.tf with different values depending of the environment for example\n Content of modules\/vpc_module\/main.tf Pay attention to the use of var.vpc_cidr. Another interesting topic is the use of the terraform function called cidrsubnet() Cidrsubnet calculates a subnet address within given IP network address prefix. It takes 3 parameters\n the cidr block newbits (if the network is \/16 and we setup a number of 8 the it will create a \/24 subnet) num (subnet number)  resource \u0026#34;aws_vpc\u0026#34; \u0026#34;myvpc\u0026#34; {  cidr_block = var.vpc_cidr  enable_dns_hostnames = true  enable_classiclink_dns_support = true }  resource \u0026#34;aws_internet_gateway\u0026#34; \u0026#34;myigw\u0026#34; {  vpc_id = aws_vpc.myvpc.id }  resource \u0026#34;aws_subnet\u0026#34; \u0026#34;public\u0026#34; {  cidr_block = cidrsubnet(\u0026#34;${var.vpc_cidr}\u0026#34;, 8, 1)  vpc_id = aws_vpc.myvpc.id }  resource \u0026#34;aws_subnet\u0026#34; \u0026#34;private\u0026#34; {  cidr_block = cidrsubnet(\u0026#34;${var.vpc_cidr}\u0026#34;, 8, 2)  vpc_id = aws_vpc.myvpc.id } Step 3. Prepare the prod and staging folders  Both folders will have the files\n main.tf variables.tf  So the whole tree will be\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod │ ├── main.tf │ └── variables.tf └── staging  ├── main.tf  └── variables.tf Prod environment The prod\/variables.tf file will look like this\nvariable \u0026#34;prodcidr\u0026#34; {  type = string  default = \u0026#34;10.1.0.0\/16\u0026#34; } Now when we invoke the module from prod\/main.tf the cidr will use this variable see how below.\nprovider \u0026#34;aws\u0026#34; {  region = \u0026#34;eu-central-1\u0026#34; } module \u0026#34;mymodule\u0026#34; {  source = \u0026#34;..\/modules\/vpc_module\u0026#34;  vpc_cidr = var.prodcidr  } On the code above we are calling the module (source = \u0026ldquo;..\/modules\/vpc_module\u0026rdquo;) but we are using the var.prodcidr cidr\nStaging environment Follwing the same pattern I configure the staging\nvariable \u0026#34;stgcidr\u0026#34; {  type = string  default = \u0026#34;10.2.0.0\/16\u0026#34; } provider \u0026#34;aws\u0026#34; {  region = \u0026#34;eu-central-1\u0026#34; } module \u0026#34;mymodule\u0026#34; {  source = \u0026#34;..\/modules\/vpc_module\u0026#34;  vpc_cidr = var.stgcidr  } Step 4. Initialize prod and stading folders Execute\nterraform init under\n \/prod \/staging  Execute\nterraform plan to see the proposed changes\n</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformmodules\/"
           	},
           	
           	{
@@ -266,21 +260,9 @@ if (!doNotTrack) {
           	},
           	
           	{
-          		value: "On top of the tree",
-          		label: "<p>I am some text UUUU\n</p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/"
-          	},
-          	
-          	{
           		value: "Terraform",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/"
-          	},
-          	
-          	{
-          		value: "What apperas in box",
-          		label: "<p></p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/"
           	},
           	
           	{
@@ -359,16 +341,6 @@ if (!doNotTrack) {
                 <i class="ti-harddrive icon text-primary d-block mb-4"></i>
               
               <h3 class="mb-3 mt-0">API</h3>
-              
-            </a>
-          </div>
-        
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="https://architect.proyectoomega.es/blogcategory/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-              
-                <i class="ti-world icon text-primary d-block mb-4"></i>
-              
-              <h3 class="mb-3 mt-0">What apperas in box</h3>
               
             </a>
           </div>

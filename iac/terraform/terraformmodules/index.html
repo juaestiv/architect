@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  
+  <meta charset="utf-8" />
+  <title>Terraform Modules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Terraform Modules - Solutions Architect Resources " />
+
+ 
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Terraform Modules" />
+  <meta
+    name="twitter:description"
+    content="Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
+The idea is that it will be a variable that will replace the CIDR blocks acording the environment."
+  />
+    <meta property="og:title" content="Terraform Modules" />
+<meta property="og:description" content="Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
+The idea is that it will be a variable that will replace the CIDR blocks acording the environment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/iac/terraform/terraformmodules/" /><meta property="article:section" content="IaC" />
+<meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Terraform Modules"/>
+<meta name="twitter:description" content="Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
+The idea is that it will be a variable that will replace the CIDR blocks acording the environment."/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                       
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/iac/"
+  title="IaC"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/iac/">
+    IaC
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/iac/terraform/"
+  title="Terraform"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/iac/terraform/">
+    Terraform
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/iac/terraform/terraform/"
+  title="Terraform"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/iac/terraform/terraform/">
+    Terraform
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/iac/terraform/terraformmodules/"
+  title="Terraform Modules"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/iac/terraform/terraformmodules/">
+    Terraform Modules
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+        
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Terraform Modules</h2>
+          
+          <div class="content"><h3 id="intro">Intro</h3>
+<p>The use of modules will allow to write less code and to reuse the resource creation in several environments.
+I am going to create a module which setup the following resources</p>
+<br>
+<ul>
+<li>VPC</li>
+<li>Public Subnet</li>
+<li>Private Subnet</li>
+<li>Internet Gateway</li>
+</ul>
+<p>Once the module is created it can be used to deploy <strong>Production</strong> and <strong>Staging</strong> environments without the need to repeat the code for those envirroments.</p>
+<p>The idea is that it will be a variable that will replace the CIDR blocks acording the environment.</p>
+<p>In other words, when creating Production it will use 10.1.0.0 network and when creating Staging it wil use 10.2.0.0.</p>
+<h4 id="step-1-create-a-folder-tree">Step 1. Create a folder tree</h4>
+<hr>
+<p>Create a folder tree as follows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>yourproject
+</span></span><span style="display:flex;"><span>│   ├── modules
+</span></span><span style="display:flex;"><span>│   ├── prod
+</span></span><span style="display:flex;"><span>│   └── staging
+</span></span></code></pre></div><p>Under modules directory I am going to create a <strong>reusable</strong> module for VPC and it&rsquo;s subnets. For that purpose  I&rsquo;ll create a <strong>vpc_module</strong> folder that will contain main.tf and variables as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% tree
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── modules
+</span></span><span style="display:flex;"><span>│   └── vpc_module
+</span></span><span style="display:flex;"><span>│       ├── main.tf
+</span></span><span style="display:flex;"><span>│       └── variables.tf
+</span></span><span style="display:flex;"><span>├── prod
+</span></span><span style="display:flex;"><span>└── staging
+</span></span></code></pre></div><h4 id="step-2-creating-the-vpc-module">Step 2. Creating the VPC Module</h4>
+<hr>
+<h5 id="content-of-modulesvpc_modulevariablestf">Content of modules/vpc_module/variables.tf</h5>
+<p>Here we will define the network default address</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">variable</span> <span style="color:#e6db74">&#34;vpc_cidr&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10.1.0.0/16&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>Explanation: This <strong>vpc_cidr</strong> variable will be replaced in the <strong>main.tf</strong> with different values depending of the environment for example</p>
+</blockquote>
+<h5 id="content-of-modulesvpc_modulemaintf">Content of modules/vpc_module/main.tf</h5>
+<p>Pay attention to the use of var.vpc_cidr. Another interesting topic is the use of the <strong>terraform function</strong> called <strong><u>cidrsubnet()</u></strong>
+Cidrsubnet calculates a subnet address within given IP network address prefix.
+It takes 3 parameters</p>
+<ul>
+<li>the cidr block</li>
+<li>newbits (if the network is /16 and we setup a number of <strong>8</strong> the it will create a /24 subnet)</li>
+<li>num (subnet number)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">resource</span> <span style="color:#e6db74">&#34;aws_vpc&#34;</span> <span style="color:#e6db74">&#34;myvpc&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cidr_block</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">var</span>.<span style="color:#a6e22e">vpc_cidr</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable_dns_hostnames</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable_classiclink_dns_support</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">resource</span> <span style="color:#e6db74">&#34;aws_internet_gateway&#34;</span> <span style="color:#e6db74">&#34;myigw&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">vpc_id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_vpc</span>.<span style="color:#a6e22e">myvpc</span>.<span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">resource</span> <span style="color:#e6db74">&#34;aws_subnet&#34;</span> <span style="color:#e6db74">&#34;public&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cidr_block</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cidrsubnet</span>(<span style="color:#e6db74">&#34;${var.vpc_cidr}&#34;</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">vpc_id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_vpc</span>.<span style="color:#a6e22e">myvpc</span>.<span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">resource</span> <span style="color:#e6db74">&#34;aws_subnet&#34;</span> <span style="color:#e6db74">&#34;private&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cidr_block</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cidrsubnet</span>(<span style="color:#e6db74">&#34;${var.vpc_cidr}&#34;</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">vpc_id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_vpc</span>.<span style="color:#a6e22e">myvpc</span>.<span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="step-3-prepare-the-prod-and-staging-folders">Step 3. Prepare the prod and staging folders</h4>
+<hr>
+<p>Both folders will have the files</p>
+<ul>
+<li>main.tf</li>
+<li>variables.tf</li>
+</ul>
+<p>So the whole tree will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% tree
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── modules
+</span></span><span style="display:flex;"><span>│   └── vpc_module
+</span></span><span style="display:flex;"><span>│       ├── main.tf
+</span></span><span style="display:flex;"><span>│       └── variables.tf
+</span></span><span style="display:flex;"><span>├── prod
+</span></span><span style="display:flex;"><span>│   ├── main.tf
+</span></span><span style="display:flex;"><span>│   └── variables.tf
+</span></span><span style="display:flex;"><span>└── staging
+</span></span><span style="display:flex;"><span>    ├── main.tf
+</span></span><span style="display:flex;"><span>    └── variables.tf
+</span></span></code></pre></div><h5 id="prod-environment">Prod environment</h5>
+<p>The prod/variables.tf file will look like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">variable</span> <span style="color:#e6db74">&#34;prodcidr&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10.1.0.0/16&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now when we invoke the module from prod/main.tf the cidr will use this variable
+see how below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">provider</span> <span style="color:#e6db74">&#34;aws&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">region</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eu-central-1&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span> <span style="color:#e6db74">&#34;mymodule&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;../modules/vpc_module&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">vpc_cidr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">var</span>.<span style="color:#a6e22e">prodcidr</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>On the code above we are calling the module  (source = &ldquo;../modules/vpc_module&rdquo;) but we are using the <strong>var.prodcidr</strong> cidr</p>
+<h5 id="staging-environment">Staging environment</h5>
+<p>Follwing the same pattern I configure the staging</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">variable</span> <span style="color:#e6db74">&#34;stgcidr&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10.2.0.0/16&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">provider</span> <span style="color:#e6db74">&#34;aws&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">region</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eu-central-1&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span> <span style="color:#e6db74">&#34;mymodule&#34;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;../modules/vpc_module&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">vpc_cidr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">var</span>.<span style="color:#a6e22e">stgcidr</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="step-4-initialize-prod-and-stading-folders">Step 4. Initialize prod and stading folders</h4>
+<p>Execute</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>terraform init
+</span></span></code></pre></div><p>under</p>
+<ul>
+<li>/prod</li>
+<li>/staging</li>
+</ul>
+<p>Execute</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>terraform plan
+</span></span></code></pre></div><p>to see the proposed changes</p>
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 03 Apr 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                                             
+              
+              
+                                            
+                     
+                          
+              
+              
+                  
+                                
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/iac/terraform/terraform/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Terraform</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/api/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">API</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+  </body>
+</html>

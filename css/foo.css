@@ -3,6 +3,13 @@ p {
   font-family: jabore;
 
 }
+h5 {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-family: uno;
+  font-size:150%;
+  color: brown;
+}
 h4 {
   padding-top: 5%;
   padding-bottom: 0%;
@@ -31,8 +38,15 @@ h2 {
   }
 h1 {
     font-family:uno;
-
   }
+.highlight {
+  padding-bottom: 3%;
+}
+blockquote {
+  padding-bottom: 0%;
+
+
+}
 
 .d-block {
   background:transparent;

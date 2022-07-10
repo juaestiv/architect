@@ -18,14 +18,14 @@
     </item>
     
     <item>
-      <title>Terraform Staging</title>
-      <link>https://architect.proyectoomega.es/iac/terraform/terraformstaging/</link>
+      <title>Terraform Modules</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraformmodules/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
       
-      <guid>https://architect.proyectoomega.es/iac/terraform/terraformstaging/</guid>
-      <description>Intro I am going to use a terraform project to deploy resources in three environments, dev, staging and production. There are several alternatives. First one will be using several directories with variables
-Option 1. Step 1. Create a folder tree Create a folder tree as follows
-yourproject │ ├── modules │ ├── prod │ └── staging We can create three VPC one per environment. To do dat first we are going to create a moudule for vpc under modules folder.</description>
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraformmodules/</guid>
+      <description>Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
+The idea is that it will be a variable that will replace the CIDR blocks acording the environment.</description>
     </item>
     
   </channel>
