@@ -8,12 +8,13 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta name="description" content="Solutions Architect Resources - Solutions Architect Resources " />
 
-  
+ 
   
   <link
     rel="stylesheet"
     href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
   />
+
 
   
   <link
@@ -30,7 +31,7 @@
 
   
   <link
-    href="https://fonts.googleapis.com/css?family=:300,400,700&display=swap"
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
     rel="stylesheet"
   />
 
@@ -40,13 +41,13 @@
 
   <style>
     :root{
-      --primary-color:;
-      --body-color:;
-      --text-color:;
-      --text-color-dark:;
-      --white-color:;
-      --light-color:;
-      --font-family:;
+      --primary-color:#006385;
+      --body-color:#d0e0e3;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
     }
   </style>
 
@@ -98,6 +99,14 @@ if (!doNotTrack) {
 <meta name="twitter:title" content="Solutions Architect Resources"/>
 <meta name="twitter:description" content=""/>
 
+
+
+  
+  
+
+  <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
 </head>
 
 
@@ -184,7 +193,7 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 text-center mx-auto">
       <h1 class="text-white mb-3">
-        Sequi, rem architecto!
+        ARCHITECTING
       </h1>
       <p class="text-white mb-4">
         Sharing is caring
@@ -203,27 +212,75 @@ if (!doNotTrack) {
           var projects = [
           	
           	{
+          		value: "Hugo",
+          		label: "<p>I am some text UUUU\n</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/staticsites\/hugo\/"
+          	},
+          	
+          	{
+          		value: "Hugo Layouts",
+          		label: "<p>Layout Index.html  First layout to pay attention is the one under the folder layouts\/index.html If you need to edit that layout yu can make a copy from themes\/whatevertheme\/layouts\/index.html folder in layouts\/index.html Let\u0026rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows\n \u0026lt;!-- topic-item --\u0026gt;  {{ range (where .Site.Pages \u0026#34;Type\u0026#34; \u0026#34;docs\u0026#34;) }}  \u0026lt;div class=\u0026#34;col-lg-3 col-sm-6 mb-4\u0026#34;\u0026gt; Custom CSS  You can use your own css files to override de css in use.\n edit config.toml  custom_css = [\u0026#34;css\/foo.css\u0026#34;, \u0026#34;css\/bar.css\u0026#34;] In static folder create the css directory and the files\nThen on the partial that have the head tab\n \u0026lt;!-- ** CSS Plugins Needed for the Project ** --\u0026gt;  {{ range .Site.Params.custom_css -}}  \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;{{ . | absURL }}\u0026#34;\u0026gt;  {{- end }} for example in layout\/partials\/head.html\nIt is important where to put the code. As there are a lot of css I put it at the end of the head\nCustom fonts   config.toml  custom_font = [\u0026#34;http:\/\/fonts.cdnfonts.com\/css\/vielkalahizo\u0026#34;]      {{ range .Site.Params.custom_font -}}  \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;{{ . | absURL }}\u0026#34;\u0026gt;  {{- end }} edit your custom css  h3 {  font-family: Vielkalahizo;  color: rgb(150, 93, 150)  } Format Classes  Just with a dot\n.d-block {  background:transparent;  padding:0.5rem 0.5rem;  margin:0 0.5rem;   border-top-left-radius: 255px 15px;  border-top-right-radius: 15px 225px;  border-bottom-right-radius: 225px 15px;  border-bottom-left-radius:15px 255px; } </p>",
+          		url:"https:\/\/architect.proyectoomega.es\/staticsites\/hugo\/hugolayouts\/"
+          	},
+          	
+          	{
+          		value: "Static Sites",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/staticsites\/"
+          	},
+          	
+          	{
           		value: "Appsync Mock",
-          		label: "<p>Appsync Start the mock api service\namplify mock api Sample mutation\nmutation MyMutation {  createWebnavigation(input: {navpage: \u0026#34;sample\u0026#34;, updatedAt: \u0026#34;2022\u0026#34;}) {  navpage  updatedAt  } } Sample list\nquery MyQuery {  listWebnavigations {  items {  createdAt  id  navpage  updatedAt  }  } } Testing with postman  Create a POST REQUEST URL http:\/\/192.168.1.220:20002\/graphql Add auth  Key: x-api-key\nValue: ccccc 4. body (check graphql)\nhttps:\/\/github.com\/dabit3\/aws-appsync-react-workshop\/blob\/with-testing\/AppWithHooks.js\nhttps:\/\/amplify-sns.workshop.aws\/en\/50_follow_timeline\/20_timeline_back_end.html\n</p>",
+          		label: "<p>Appsync Start the mock api service\namplify mock api Sample mutation\nmutation MyMutation {  createWebnavigation(input: {navpage: \u0026#34;sample\u0026#34;, updatedAt: \u0026#34;2022\u0026#34;}) {  navpage  updatedAt  } } Sample list\nquery MyQuery {  listWebnavigations {  items {  createdAt  id  navpage  updatedAt  }  } } Testing with postman  Create a POST REQUEST URL http:\/\/192.168.1.220:20002\/graphql Add auth  Key: x-api-key\nValue: ccccc 4. body (check graphql)\nhttps:\/\/github.com\/dabit3\/aws-appsync-react-workshop\/blob\/with-testing\/AppWithHooks.js \nhttps:\/\/amplify-sns.workshop.aws\/en\/50_follow_timeline\/20_timeline_back_end.html \n</p>",
           		url:"https:\/\/architect.proyectoomega.es\/api\/graphql\/appsyncmock\/"
           	},
           	
           	{
-          		value: "API",
+          		value: "ddddd",
+          		label: "<p>Appsync </p>",
+          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/appsyncmock\/"
+          	},
+          	
+          	{
+          		value: "IaC",
           		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/"
+          	},
+          	
+          	{
+          		value: "Terraform",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraform\/"
+          	},
+          	
+          	{
+          		value: "Terraform Staging",
+          		label: "<p>Intro I am going to use a terraform project to deploy resources in three environments, dev, staging and production. There are several alternatives. First one will be using several directories with variables\nOption 1. Step 1. Create a folder tree Create a folder tree as follows\nyourproject │ ├── modules │ ├── prod │ └── staging We can create three VPC one per environment. To do dat first we are going to create a moudule for vpc under modules folder. We can create a subfolder called vpc_module and create main and variable tf files\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod └── staging </p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformstaging\/"
+          	},
+          	
+          	{
+          		value: "API",
+          		label: "<p>I am some text UUUU\n</p>",
           		url:"https:\/\/architect.proyectoomega.es\/api\/"
           	},
           	
           	{
-          		value: "Blog",
-          		label: "<p></p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/"
+          		value: "On top of the tree",
+          		label: "<p>I am some text UUUU\n</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/"
           	},
           	
           	{
-          		value: "Visible",
-          		label: "<p>Building Visible. Use Draft for draft version\n</p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/file\/"
+          		value: "Terraform",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/"
+          	},
+          	
+          	{
+          		value: "What apperas in box",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/"
           	},
           	
           	{
@@ -276,7 +333,27 @@ if (!doNotTrack) {
         </div>
         
         
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <a href="https://architect.proyectoomega.es/staticsites/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-world icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Static Sites</h3>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <a href="https://architect.proyectoomega.es/iac/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-world icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">IaC</h3>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-3 col-sm-6 mb-4">
             <a href="https://architect.proyectoomega.es/api/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
               
                 <i class="ti-harddrive icon text-primary d-block mb-4"></i>
@@ -286,12 +363,12 @@ if (!doNotTrack) {
             </a>
           </div>
         
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-3 col-sm-6 mb-4">
             <a href="https://architect.proyectoomega.es/blogcategory/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
               
                 <i class="ti-world icon text-primary d-block mb-4"></i>
               
-              <h3 class="mb-3 mt-0">Blog</h3>
+              <h3 class="mb-3 mt-0">What apperas in box</h3>
               
             </a>
           </div>

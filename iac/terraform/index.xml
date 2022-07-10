@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terraform on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/iac/terraform/</link>
+    <description>Recent content in Terraform on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/iac/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraform/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform Staging</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraformstaging/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraformstaging/</guid>
+      <description>Intro I am going to use a terraform project to deploy resources in three environments, dev, staging and production. There are several alternatives. First one will be using several directories with variables
+Option 1. Step 1. Create a folder tree Create a folder tree as follows
+yourproject │ ├── modules │ ├── prod │ └── staging We can create three VPC one per environment. To do dat first we are going to create a moudule for vpc under modules folder.</description>
+    </item>
+    
+  </channel>
+</rss>

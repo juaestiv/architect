@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Solutions Architect Resources</title>
+    <title>What apperas in box on Solutions Architect Resources</title>
     <link>https://architect.proyectoomega.es/blogcategory/</link>
-    <description>Recent content in Blog on Solutions Architect Resources</description>
+    <description>Recent content in What apperas in box on Solutions Architect Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Wed, 16 Feb 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/blogcategory/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Visible</title>
-      <link>https://architect.proyectoomega.es/blogcategory/file/</link>
-      <pubDate>Sun, 26 Dec 2021 15:51:42 +0100</pubDate>
-      
-      <guid>https://architect.proyectoomega.es/blogcategory/file/</guid>
-      <description>Building Visible. Use Draft for draft version</description>
-    </item>
-    
   </channel>
 </rss>

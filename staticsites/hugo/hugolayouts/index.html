@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  
+  <meta charset="utf-8" />
+  <title>Hugo Layouts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Hugo Layouts - Solutions Architect Resources " />
+
+ 
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d0e0e3;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Hugo Layouts" />
+  <meta
+    name="twitter:description"
+    content="Layout Index.html  First layout to pay attention is the one under the folder layouts/index.html If you need to edit that layout yu can make a copy from themes/whatevertheme/layouts/index.html folder in layouts/index.html Let&rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows
+ &lt;!-- topic-item --&gt;  {{ range (where .Site.Pages &#34;Type&#34; &#34;docs&#34;) }}  &lt;div class=&#34;col-lg-3 col-sm-6 mb-4&#34;&gt; Custom CSS  You can use your own css files to override de css in use."
+  />
+    <meta property="og:title" content="Hugo Layouts" />
+<meta property="og:description" content="Layout Index.html  First layout to pay attention is the one under the folder layouts/index.html If you need to edit that layout yu can make a copy from themes/whatevertheme/layouts/index.html folder in layouts/index.html Let&rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows
+ &lt;!-- topic-item --&gt;  {{ range (where .Site.Pages &#34;Type&#34; &#34;docs&#34;) }}  &lt;div class=&#34;col-lg-3 col-sm-6 mb-4&#34;&gt; Custom CSS  You can use your own css files to override de css in use." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/" /><meta property="article:section" content="staticSites" />
+<meta property="article:published_time" content="2022-07-10T11:20:26+01:00" />
+<meta property="article:modified_time" content="2022-07-10T11:20:26+01:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo Layouts"/>
+<meta name="twitter:description" content="Layout Index.html  First layout to pay attention is the one under the folder layouts/index.html If you need to edit that layout yu can make a copy from themes/whatevertheme/layouts/index.html folder in layouts/index.html Let&rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows
+ &lt;!-- topic-item --&gt;  {{ range (where .Site.Pages &#34;Type&#34; &#34;docs&#34;) }}  &lt;div class=&#34;col-lg-3 col-sm-6 mb-4&#34;&gt; Custom CSS  You can use your own css files to override de css in use."/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="http://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                     
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/staticsites/"
+  title="Static Sites"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/staticsites/">
+    Static Sites
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/staticsites/hugo/"
+  title="Hugo"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/staticsites/hugo/">
+    Hugo
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/"
+  title="Hugo Layouts"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/">
+    Hugo Layouts
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Hugo Layouts</h2>
+          
+          <div class="content"><h3 id="ulayoutu"><u>Layout</u></h3>
+<h4 id="indexhtml">Index.html</h4>
+<hr>
+<p>First layout to pay attention is the one under the folder <strong>layouts/index.html</strong>
+If you need to edit that layout yu can make a copy from <strong>themes/whatevertheme/layouts/index.html</strong> folder in <strong>layouts/index.html</strong>
+Let&rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span> <span style="color:#75715e">&lt;!-- topic-item --&gt;</span>
+</span></span><span style="display:flex;"><span>        {{ range (where .Site.Pages &#34;Type&#34; &#34;docs&#34;) }}
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-lg-3 col-sm-6 mb-4&#34;</span>&gt;
+</span></span></code></pre></div><h4 id="custom-css">Custom CSS</h4>
+<hr>
+<p>You can use your own css files to override de css in use.</p>
+<ol>
+<li>edit config.toml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">custom_css = [&#34;css/foo.css&#34;, &#34;css/bar.css&#34;]</span>
+</span></span></code></pre></div><p>In <strong>static</strong> folder create the css directory and the files</p>
+<p>Then on the partial that have the head tab</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- ** CSS Plugins Needed for the Project ** --&gt;</span>
+</span></span><span style="display:flex;"><span>  {{ range .Site.Params.custom_css -}}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . | absURL }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  {{- end }}
+</span></span></code></pre></div><p>for example in layout/partials/head.html</p>
+<p>It is important where to put the code. As there are a lot of css I put it at the end of the head</p>
+<h4 id="custom-fonts">Custom fonts</h4>
+<hr>
+<ol>
+<li>config.toml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">custom_font = [&#34;http://fonts.cdnfonts.com/css/vielkalahizo&#34;]</span>
+</span></span></code></pre></div><ol start="2">
+<li>
+<head class="html"></head>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  {{ range .Site.Params.custom_font -}}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . | absURL }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  {{- end }}
+</span></span></code></pre></div><ol start="3">
+<li>edit your custom css</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Vielkalahizo;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: rgb(<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">93</span>, <span style="color:#ae81ff">150</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h4 id="format-classes">Format Classes</h4>
+<hr>
+<p>Just with a dot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">d-block</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>:<span style="color:#66d9ef">transparent</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-top-left-radius</span>: <span style="color:#ae81ff">255</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-top-right-radius</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">225</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-bottom-right-radius</span>: <span style="color:#ae81ff">225</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-bottom-left-radius</span>:<span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">255</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 10 Jul 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                                                       
+              
+              
+                  
+                                             
+                         
+              
+              
+                                    
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/staticsites/hugo/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Hugo</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/iac/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">IaC</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+  </body>
+</html>

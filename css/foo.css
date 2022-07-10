@@ -1,0 +1,48 @@
+p {
+  font-size:120%;
+  font-family: jabore;
+
+}
+h4 {
+  padding-top: 5%;
+  padding-bottom: 0%;
+  font-family: uno;
+  font-size:150%;
+  color: blueviolet;
+ 
+}
+hr {
+  padding-bottom: 2%;
+  border-top: 1px solid blueviolet;
+
+}
+
+h3 {
+  padding-bottom: 2%;
+  font-family: Vielkalahizo;
+  color: rgb(15, 157, 88  )
+
+  }
+
+h2 {
+    font-family: saltstar;
+    color: rgb(66, 133, 244  )
+  }
+h1 {
+    font-family:uno;
+
+  }
+
+.d-block {
+  background:transparent;
+  padding:0.5rem 0.5rem;
+  margin:0 0.5rem;
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+}
+.content * {
+  margin-bottom: 0px;
+}

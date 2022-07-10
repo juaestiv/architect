@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/staticsites/hugo/</link>
+    <description>Recent content in Hugo on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/staticsites/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Layouts</title>
+      <link>https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/</guid>
+      <description>Layout Index.html  First layout to pay attention is the one under the folder layouts/index.html If you need to edit that layout yu can make a copy from themes/whatevertheme/layouts/index.html folder in layouts/index.html Let&amp;rsquo;s say that your content is shown in 3 columns (size of 4 each one) to 4 Columns (size of 3 each) you can chang as follows
+ &amp;lt;!-- topic-item --&amp;gt;  {{ range (where .Site.Pages &amp;#34;Type&amp;#34; &amp;#34;docs&amp;#34;) }}  &amp;lt;div class=&amp;#34;col-lg-3 col-sm-6 mb-4&amp;#34;&amp;gt; Custom CSS  You can use your own css files to override de css in use.</description>
+    </item>
+    
+  </channel>
+</rss>
