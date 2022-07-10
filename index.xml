@@ -9,6 +9,16 @@
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugo Google Analytics Integration</title>
+      <link>https://architect.proyectoomega.es/staticsites/hugo/hugoanalytics/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/hugo/hugoanalytics/</guid>
+      <description>Hugo Google Analytics Integration Analytics vs Tags Think of Tag manager as a way for you to manage ALL your ‘tags’ - for Google, Facebook, Google Ads, other ad networks, other analytics, etc
+If you are happy with Google Analytics and just want Event Tracking … then stick with Google Analytics … and to implement GA event tagging, you just need to update your head.html to include a small script …</description>
+    </item>
+    
+    <item>
       <title>Hugo Layouts</title>
       <link>https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/</link>
       <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>

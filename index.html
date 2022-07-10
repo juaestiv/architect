@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+  
   
   <meta charset="utf-8" />
   <title>Solutions Architect Resources</title>
@@ -68,18 +87,7 @@
   
   <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
 
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
-}
-</script>
- 
+   
   
   
 
@@ -215,6 +223,12 @@ if (!doNotTrack) {
           		value: "Hugo",
           		label: "<p>I am some text UUUU\n</p>",
           		url:"https:\/\/architect.proyectoomega.es\/staticsites\/hugo\/"
+          	},
+          	
+          	{
+          		value: "Hugo Google Analytics Integration",
+          		label: "<p>Hugo Google Analytics Integration Analytics vs Tags Think of Tag manager as a way for you to manage ALL your ‘tags’ - for Google, Facebook, Google Ads, other ad networks, other analytics, etc\nIf you are happy with Google Analytics and just want Event Tracking … then stick with Google Analytics … and to implement GA event tagging, you just need to update your head.html to include a small script …\nConfigure Google Analytics On the botton left corner there is an engine wheel to configure.\n Create a property In Dataflow you can click on IOS, Android, Web. Click on web and you will get the id G-xxxxx  Be sure that you are not with ad blockers. You can connect your laptop thorugh your phone with a shared connection to avoid proxy or router settings.\nYou can see in your developer console if your connection to ttps:\/\/www.googletagmanager.com\/gtag\/js?id=G-xxxx is refused\nConfigure Config.toml\nGoogleAnalyticsID = \u0026#34;G-cccccc\u0026#34; Configure partials\/head.html or whre you have your header.\n{{ if .Site.Params.GoogleAnalyticsID }} {{ partial \u0026#34;analytics-gtag.html\u0026#34; . }} {{ end }} Create layouts\/partials\/analytics-gtag.html\n\u0026lt;!-- Global site tag (gtag.js) - Google Analytics --\u0026gt; \u0026lt;script async src=\u0026#34;https:\/\/www.googletagmanager.com\/gtag\/js?id={{ .Site.Params.GoogleAnalyticsID }}\u0026#34;\u0026gt;\u0026lt;\/script\u0026gt; \u0026lt;script\u0026gt;  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag(\u0026#39;js\u0026#39;, new Date());  gtag(\u0026#39;config\u0026#39;, \u0026#39;{{ .Site.Params.GoogleAnalyticsID }}\u0026#39;); \u0026lt;\/script\u0026gt; </p>",
+          		url:"https:\/\/architect.proyectoomega.es\/staticsites\/hugo\/hugoanalytics\/"
           	},
           	
           	{
@@ -374,5 +388,10 @@ if (!doNotTrack) {
 
 <script src="https://architect.proyectoomega.es/js/script.min.js"></script>
 
+
   </body>
-</html>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>
