@@ -19,6 +19,17 @@ If you are happy with Google Analytics and just want Event Tracking … then sti
     </item>
     
     <item>
+      <title>Hugo Google SEO Integration</title>
+      <link>https://architect.proyectoomega.es/staticsites/hugo/hugoseo/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/hugo/hugoseo/</guid>
+      <description>Hugo Google SEO Integration SEO Search Engine Optimization.
+Edit config.toml Edit the title and sitemap.
+title = &amp;#39;text to appear ein search&amp;#39; [sitemap]  changefreq = &amp;#34;weekly&amp;#34;  filename = &amp;#34;sitemap.xml&amp;#34;  priority = 0.5 &amp;lt;meta name=&amp;#34;keywords&amp;#34; content=&amp;#34;{{ if .Params.Keywords }}{{ delimit .Params.Keywords &amp;#34;, &amp;#34; }}{{ end }}&amp;#34;&amp;gt; Edit head partial &amp;lt;meta name=&amp;#34;keywords&amp;#34; content=&amp;#34;{{ if .Params.Keywords }}{{ delimit .Params.Keywords &amp;#34;, &amp;#34; }}{{ end }}&amp;#34;&amp;gt; Then in your markdown files add keywords for the sarach</description>
+    </item>
+    
+    <item>
       <title>Hugo Layouts</title>
       <link>https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/</link>
       <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>

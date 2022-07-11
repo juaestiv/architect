@@ -4,39 +4,70 @@
   <url>
     <loc>https://architect.proyectoomega.es/staticsites/hugo/</loc>
     <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/staticsites/hugo/hugoanalytics/</loc>
     <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/staticsites/hugo/hugoseo/</loc>
+    <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/staticsites/hugo/hugolayouts/</loc>
     <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/staticsites/</loc>
     <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/api/graphql/appsyncmock/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/iac/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/iac/terraform/terraform/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/iac/terraform/terraformmodules/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/api/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/iac/terraform/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/</loc>
     <lastmod>2022-07-10T11:20:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
