@@ -10,10 +10,10 @@
     <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creación del proyecto en Cloud Shell</title>
-      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</link>
+      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell/</link>
       <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
       
-      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</guid>
+      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell/</guid>
       <description>Intro #### Install Brew
  Clone.  git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile.
 mkdir ~/.linuxbrew/bin 3. Link.
