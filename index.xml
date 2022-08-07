@@ -9,6 +9,25 @@
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Creación del proyecto en Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</guid>
+      <description>Intro #### Install Brew
+ Clone.  git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile.
+mkdir ~/.linuxbrew/bin 3. Link.
+ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin 4. Update environment.
+eval $(~/.linuxbrew/bin/brew shellenv) 5. Update.
+brew 6. Confirm.
+brew &amp;ndash;version
+Install hugo from home enable brew
+eval $(~/.linuxbrew/bin/brew shellenv) Install hugo
+brew install hugo Edit the .profile
+# ~/.profile: executed by the command interpreter for login shells. # This file is not read by bash(1), if ~/.</description>
+    </item>
+    
+    <item>
       <title>Hugo Google Analytics Integration</title>
       <link>https://architect.proyectoomega.es/staticsites/hugo/hugoanalytics/</link>
       <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
@@ -40,6 +59,26 @@ title = &amp;#39;text to appear ein search&amp;#39; [sitemap]  changefreq = &amp
     </item>
     
     <item>
+      <title>My Hugo</title>
+      <link>https://architect.proyectoomega.es/staticsites/hugo/myhugo/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/hugo/myhugo/</guid>
+      <description>My Hugo Setup  Clone the repo  git clone git@github-juaestiv:juaestiv/omega-hugo.git template-hugo rm -rf .git cd public rm -rf .git cd .. cd themes rm -rf dot-hugo cd .. git init git add . git commit -m &amp;#34;before theme&amp;#34; cd themes git submodule add .....   </description>
+    </item>
+    
+    <item>
+      <title>Preparación</title>
+      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/setup/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/setup/</guid>
+      <description>Intro Este es un proceso paso a paso para crear un nuevo site basado en hugo sin depender del portátil. Para ello vamos a utilizar el cloudShell the GCP
+Google Cloud Identity &amp;amp; Google Workspaces Se puede utilizar GCP sin tener una organización pero en mi caso es preferible hacer un setup como una empresa lo haría (parcialmente porque tampoco soy un super experto)
+ Dominio adquirido y configurado por ejemplo en goDady Una cuenta de pago con un solo usuario de Workspaces (unos 6 euros) En Workspaces podemos añadir Cloud Identity para poder añadir hasta 50 usuarios sin tener que pagar licencia por cada uno de ellos.</description>
+    </item>
+    
+    <item>
       <title>Appsync Mock</title>
       <link>https://architect.proyectoomega.es/api/graphql/appsyncmock/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -50,6 +89,15 @@ amplify mock api Sample mutation
 mutation MyMutation {  createWebnavigation(input: {navpage: &amp;#34;sample&amp;#34;, updatedAt: &amp;#34;2022&amp;#34;}) {  navpage  updatedAt  } } Sample list
 query MyQuery {  listWebnavigations {  items {  createdAt  id  navpage  updatedAt  }  } } Testing with postman  Create a POST REQUEST URL http://192.168.1.220:20002/graphql Add auth  Key: x-api-key
 Value: ccccc 4. body (check graphql)</description>
+    </item>
+    
+    <item>
+      <title>ddddd</title>
+      <link>https://architect.proyectoomega.es/blogcategory/subject/appsyncmock/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/blogcategory/subject/appsyncmock/</guid>
+      <description>Appsync </description>
     </item>
     
     <item>

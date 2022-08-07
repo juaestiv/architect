@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nuevo Site Usando Cloud on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/</link>
+    <description>Recent content in Nuevo Site Usando Cloud on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/staticsites/nuevositecloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creación del proyecto en Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell.en-copy/</guid>
+      <description>Intro #### Install Brew
+ Clone.  git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile.
+mkdir ~/.linuxbrew/bin 3. Link.
+ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin 4. Update environment.
+eval $(~/.linuxbrew/bin/brew shellenv) 5. Update.
+brew 6. Confirm.
+brew &amp;ndash;version
+Install hugo from home enable brew
+eval $(~/.linuxbrew/bin/brew shellenv) Install hugo
+brew install hugo Edit the .profile
+# ~/.profile: executed by the command interpreter for login shells. # This file is not read by bash(1), if ~/.</description>
+    </item>
+    
+    <item>
+      <title>Preparación</title>
+      <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/setup/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/setup/</guid>
+      <description>Intro Este es un proceso paso a paso para crear un nuevo site basado en hugo sin depender del portátil. Para ello vamos a utilizar el cloudShell the GCP
+Google Cloud Identity &amp;amp; Google Workspaces Se puede utilizar GCP sin tener una organización pero en mi caso es preferible hacer un setup como una empresa lo haría (parcialmente porque tampoco soy un super experto)
+ Dominio adquirido y configurado por ejemplo en goDady Una cuenta de pago con un solo usuario de Workspaces (unos 6 euros) En Workspaces podemos añadir Cloud Identity para poder añadir hasta 50 usuarios sin tener que pagar licencia por cada uno de ellos.</description>
+    </item>
+    
+  </channel>
+</rss>
