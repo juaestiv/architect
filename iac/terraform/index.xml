@@ -9,6 +9,16 @@
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/iac/terraform/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Terraform in Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraformincloudshell/</link>
+      <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraformincloudshell/</guid>
+      <description>Intro Install Brew 1. Clone git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile. mkdir ~/.linuxbrew/bin 3. Link. ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin 4.Update environment. eval $(~/.linuxbrew/bin/brew shellenv) brew 5. Add it to path. if [ -d &amp;#34;$HOME/.linuxbrew/bin&amp;#34; ] ; then  PATH=&amp;#34;$HOME/.linuxbrew/bin:$PATH&amp;#34; fi 6. Confirm. In other terminal
+brew --version Install Terraform brew tap hashicorp/tap brew install hashicorp/tap/terraform </description>
+    </item>
+    
+    <item>
       <title>Terraform</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraform/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>

@@ -14,15 +14,8 @@
       <pubDate>Sun, 10 Jul 2022 11:20:26 +0100</pubDate>
       
       <guid>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell/</guid>
-      <description>Intro #### Install Brew
- Clone.  git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile.
-mkdir ~/.linuxbrew/bin 3. Link.
-ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin 4. Update environment.
-eval $(~/.linuxbrew/bin/brew shellenv) 5. Update.
-brew 6. Confirm.
-brew &amp;ndash;version
-Install hugo from home enable brew
-eval $(~/.linuxbrew/bin/brew shellenv) Install hugo
+      <description>Intro Install Brew 1. Clone git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew 2. Compile. mkdir ~/.linuxbrew/bin 3. Link. ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin 4.Update environment. eval $(~/.linuxbrew/bin/brew shellenv) brew 5. Add it to path. if [ -d &amp;#34;$HOME/.linuxbrew/bin&amp;#34; ] ; then  PATH=&amp;#34;$HOME/.linuxbrew/bin:$PATH&amp;#34; fi 6. Confirm. In other terminal
+brew --version Install hugo Install hugo
 brew install hugo Edit the .profile
 # ~/.profile: executed by the command interpreter for login shells. # This file is not read by bash(1), if ~/.</description>
     </item>
