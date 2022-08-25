@@ -123,5 +123,15 @@ Value: ccccc 4. body (check graphql)</description>
 The idea is that it will be a variable that will replace the CIDR blocks acording the environment.</description>
     </item>
     
+    <item>
+      <title>VSCode connected to Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/</guid>
+      <description>Prerequisites I assume that you have already installed and configured gcloud cli in your environment.
+Configure your cloudshell  Git Terraform Brew  How to access from your local VS code to your cloud shell gcloud auth login #con el usuario que quiera. Tenia abierto el browser con el chrome en el usuario que quiero tener gcloud cloud-shell ssh # This generates keys in .ssh gcloud config set project omega-358617 # set up you project gcloud cloud-shell ssh # accessing using ssh Configure your ssh Setup the config file</description>
+    </item>
+    
   </channel>
 </rss>

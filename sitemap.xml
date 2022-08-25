@@ -67,6 +67,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/gcloud/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/iac/terraform/terraform/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -77,12 +82,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/api/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/blogcategory/subject/</loc>
+    <lastmod>2022-04-03T08:15:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/gcloud/remotedev/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
