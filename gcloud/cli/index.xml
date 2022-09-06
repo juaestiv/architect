@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gCloud CLI on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/gcloud/cli/</link>
+    <description>Recent content in gCloud CLI on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/gcloud/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gCloud Basic Commands</title>
+      <link>https://architect.proyectoomega.es/gcloud/cli/gcloud101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/cli/gcloud101/</guid>
+      <description>Superbasic commands # List billing accounts available gcloud beta billing accounts list The user must to have privileges</description>
+    </item>
+    
+  </channel>
+</rss>

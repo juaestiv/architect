@@ -325,8 +325,26 @@ if (!doNotTrack) {
           	},
           	
           	{
-          		value: "Terraform",
-          		label: "<p>Hello example\n</p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>terraform,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		value: "gCloud Basic Commands",
+          		label: "<p>Superbasic commands # List billing accounts available gcloud beta billing accounts list The user must to have privileges\n</p><p>gcloud,cli,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/gcloud101\/"
+          	},
+          	
+          	{
+          		value: "Terraform  GCP Cloud Functions",
+          		label: "<p>Setup environment variables https:\/\/cloud.google.com\/functions\/docs\/tutorials\/terraform\nPROJECT_ID=bubbly-journey-361318 REGION= BILLING_ACCOUNT_ID= gcloud config set project ${PROJECT_ID} We can create a project from cli\ngcloud projects create PROJECT_ID_UNIQUE_NAME --name=\u0026#34;My App\u0026#34; --organization=nnnnn gcloud projects create PROJECT_ID_UNIQUE_NAME --name=\u0026#34;My App\u0026#34; --folder=nnnnnnn gcloud beta billing projects link ${PROJECT_ID} --billing-account=${BILLING_ACCOUNT_ID} Maybe you have to change the user. In my case\ngcloud auth login login with privileged user make the changes can come back again to the less privileged user\ngcloud auth login Create two folders\n src terraform  . ├── src └── terraform On the root folder initialize npm\nnpm init And install whatever package you need.\nCreate src\/index.js Modify package.json \u0026ldquo;main\u0026rdquo;: \u0026ldquo;src\/index.js\u0026rdquo;,\nterraform\/backend.tf to keep state in local.\nterraform {  backend \u0026#34;local\u0026#34; {} } terraform\/variables.tf\nvariable \u0026#34;project\u0026#34; { \tdefault = \u0026#34;PROJECT_ID\u0026#34; } variable \u0026#34;region\u0026#34; { \tdefault = \u0026#34;us-central1\u0026#34; # Choose a region } </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>terraform,</p><p>juan</p><p>antonio</p><p>estival,</p><p>cloud</p><p>functions</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformcloudfunctions\/"
+          	},
+          	
+          	{
+          		value: "Terraform CDK",
+          		label: "<p>Install Terraform cdk Pre-requisites\n NODE, NPM YARN TERRAFORM   npm i --global cdktf-cli@next Go to an empty directory\ncdktf init --template=typescript --local ## Setup de cdk json file edit the provider\n{  \u0026#34;language\u0026#34;: \u0026#34;typescript\u0026#34;,  \u0026#34;app\u0026#34;: \u0026#34;npx ts-node main.ts\u0026#34;,  \u0026#34;projectId\u0026#34;: \u0026#34;f8143026-48c9-4aad-a83b-8de2bbbb65eb\u0026#34;,  \u0026#34;sendCrashReports\u0026#34;: \u0026#34;true\u0026#34;,  \u0026#34;terraformProviders\u0026#34;: [  \u0026#34;google\u0026#34;  ],  \u0026#34;terraformModules\u0026#34;: [],  \u0026#34;context\u0026#34;: {  \u0026#34;excludeStackIdFromLogicalIds\u0026#34;: \u0026#34;true\u0026#34;,  \u0026#34;allowSepCharsInLogicalIds\u0026#34;: \u0026#34;true\u0026#34;  } } run\ncdktf get check that the directoyry .gen is generated\n</p><p>gcloud,</p><p>terraform,</p><p>CDK,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>terraform,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformcdk\/"
+          	},
+          	
+          	{
+          		value: "Terraform Environment Variables",
+          		label: "<p>Setup environment variables Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.\nPROJECT_ID= REGION= Now we can check them\necho $PROJECT_ID echo $REGION Now we don\u0026rsquo;t need to remember the project id.\ngcloud config set project ${PROJECT_ID} Login\ngcloud auth application-default login </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>terraform,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraform\/"
           	},
           	
@@ -334,6 +352,12 @@ if (!doNotTrack) {
           		value: "Terraform Modules",
           		label: "<p>Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources\n VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.\nThe idea is that it will be a variable that will replace the CIDR blocks acording the environment.\nIn other words, when creating Production it will use 10.1.0.0 network and when creating Staging it wil use 10.2.0.0.\nStep 1. Create a folder tree  Create a folder tree as follows\nyourproject │ ├── modules │ ├── prod │ └── staging Under modules directory I am going to create a reusable module for VPC and it\u0026rsquo;s subnets. For that purpose I\u0026rsquo;ll create a vpc_module folder that will contain main.tf and variables as follows.\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod └── staging Step 2. Creating the VPC Module  Content of modules\/vpc_module\/variables.tf Here we will define the network default address\nvariable \u0026#34;vpc_cidr\u0026#34; {  type = string  default = \u0026#34;10.1.0.0\/16\u0026#34; }  Explanation: This vpc_cidr variable will be replaced in the main.tf with different values depending of the environment for example\n Content of modules\/vpc_module\/main.tf Pay attention to the use of var.vpc_cidr. Another interesting topic is the use of the terraform function called cidrsubnet() Cidrsubnet calculates a subnet address within given IP network address prefix. It takes 3 parameters\n the cidr block newbits (if the network is \/16 and we setup a number of 8 the it will create a \/24 subnet) num (subnet number)  resource \u0026#34;aws_vpc\u0026#34; \u0026#34;myvpc\u0026#34; {  cidr_block = var.vpc_cidr  enable_dns_hostnames = true  enable_classiclink_dns_support = true }  resource \u0026#34;aws_internet_gateway\u0026#34; \u0026#34;myigw\u0026#34; {  vpc_id = aws_vpc.myvpc.id }  resource \u0026#34;aws_subnet\u0026#34; \u0026#34;public\u0026#34; {  cidr_block = cidrsubnet(\u0026#34;${var.vpc_cidr}\u0026#34;, 8, 1)  vpc_id = aws_vpc.myvpc.id }  resource \u0026#34;aws_subnet\u0026#34; \u0026#34;private\u0026#34; {  cidr_block = cidrsubnet(\u0026#34;${var.vpc_cidr}\u0026#34;, 8, 2)  vpc_id = aws_vpc.myvpc.id } Step 3. Prepare the prod and staging folders  Both folders will have the files\n main.tf variables.tf  So the whole tree will be\n% tree . ├── modules │ └── vpc_module │ ├── main.tf │ └── variables.tf ├── prod │ ├── main.tf │ └── variables.tf └── staging  ├── main.tf  └── variables.tf Prod environment The prod\/variables.tf file will look like this\nvariable \u0026#34;prodcidr\u0026#34; {  type = string  default = \u0026#34;10.1.0.0\/16\u0026#34; } Now when we invoke the module from prod\/main.tf the cidr will use this variable see how below.\nprovider \u0026#34;aws\u0026#34; {  region = \u0026#34;eu-central-1\u0026#34; } module \u0026#34;mymodule\u0026#34; {  source = \u0026#34;..\/modules\/vpc_module\u0026#34;  vpc_cidr = var.prodcidr  } On the code above we are calling the module (source = \u0026ldquo;..\/modules\/vpc_module\u0026rdquo;) but we are using the var.prodcidr cidr\nStaging environment Follwing the same pattern I configure the staging\nvariable \u0026#34;stgcidr\u0026#34; {  type = string  default = \u0026#34;10.2.0.0\/16\u0026#34; } provider \u0026#34;aws\u0026#34; {  region = \u0026#34;eu-central-1\u0026#34; } module \u0026#34;mymodule\u0026#34; {  source = \u0026#34;..\/modules\/vpc_module\u0026#34;  vpc_cidr = var.stgcidr  } Step 4. Initialize prod and stading folders Execute\nterraform init under\n \/prod \/staging  Execute\nterraform plan to see the proposed changes\n</p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival,</p><p>terraform,</p><p>cloudshell</p>",
           		url:"https:\/\/architect.proyectoomega.es\/iac\/terraform\/terraformmodules\/"
+          	},
+          	
+          	{
+          		value: "Testing cloud functions locally",
+          		label: "<p>Prerequisites gcloud cli\nCreate directory  create an empty directpry and npm init.  mkdir cloud-functions-local \u0026amp;\u0026amp; cd \u0026#34;$_\u0026#34; npm init Install function frameworks  npm install --save-dev @google-cloud\/functions-framework write index.js function  exports.handleWhatever = (req, res) =\u0026gt; {  console.log(`Request body: ${JSON.stringify(req.body)}`)  res.status(200).send({  sessionInfo: {  parameters: {  customer_verified:true  }  }  }) } Start the function  npx functions-framework --target=handleWhatever --port=4444 send a post request with postman or curl  curl --header \u0026#34;Content-Type: application\/json\u0026#34; \\  --request POST \\  --data \u0026#39;{\u0026#34;username\u0026#34;:\u0026#34;xyz\u0026#34;,\u0026#34;password\u0026#34;:\u0026#34;xyz\u0026#34;}\u0026#39; \\  http:\/\/localhost:4444\/ </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cloudfunctions\/testingcfuntionslocally\/"
           	},
           	
           	{
@@ -346,6 +370,18 @@ if (!doNotTrack) {
           		value: "API",
           		label: "<p>I am some text UUUU\n</p>",
           		url:"https:\/\/architect.proyectoomega.es\/api\/"
+          	},
+          	
+          	{
+          		value: "Cloud Functions",
+          		label: "<p></p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cloudfunctions\/"
+          	},
+          	
+          	{
+          		value: "gCloud CLI",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/"
           	},
           	
           	{

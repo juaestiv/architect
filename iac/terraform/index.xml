@@ -19,12 +19,41 @@ brew --version Install Terraform brew tap hashicorp/tap brew install hashicorp/t
     </item>
     
     <item>
-      <title>Terraform</title>
+      <title>Terraform  GCP Cloud Functions</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</guid>
+      <description>Setup environment variables https://cloud.google.com/functions/docs/tutorials/terraform
+PROJECT_ID=bubbly-journey-361318 REGION= BILLING_ACCOUNT_ID= gcloud config set project ${PROJECT_ID} We can create a project from cli
+gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&amp;#34;My App&amp;#34; --organization=nnnnn gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&amp;#34;My App&amp;#34; --folder=nnnnnnn gcloud beta billing projects link ${PROJECT_ID} --billing-account=${BILLING_ACCOUNT_ID} Maybe you have to change the user. In my case
+gcloud auth login login with privileged user make the changes can come back again to the less privileged user
+gcloud auth login Create two folders</description>
+    </item>
+    
+    <item>
+      <title>Terraform CDK</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraformcdk/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraformcdk/</guid>
+      <description>Install Terraform cdk Pre-requisites
+ NODE, NPM YARN TERRAFORM   npm i --global cdktf-cli@next Go to an empty directory
+cdktf init --template=typescript --local ## Setup de cdk json file edit the provider
+{  &amp;#34;language&amp;#34;: &amp;#34;typescript&amp;#34;,  &amp;#34;app&amp;#34;: &amp;#34;npx ts-node main.ts&amp;#34;,  &amp;#34;projectId&amp;#34;: &amp;#34;f8143026-48c9-4aad-a83b-8de2bbbb65eb&amp;#34;,  &amp;#34;sendCrashReports&amp;#34;: &amp;#34;true&amp;#34;,  &amp;#34;terraformProviders&amp;#34;: [  &amp;#34;google&amp;#34;  ],  &amp;#34;terraformModules&amp;#34;: [],  &amp;#34;context&amp;#34;: {  &amp;#34;excludeStackIdFromLogicalIds&amp;#34;: &amp;#34;true&amp;#34;,  &amp;#34;allowSepCharsInLogicalIds&amp;#34;: &amp;#34;true&amp;#34;  } } run</description>
+    </item>
+    
+    <item>
+      <title>Terraform Environment Variables</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraform/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
       
       <guid>https://architect.proyectoomega.es/iac/terraform/terraform/</guid>
-      <description>Hello example</description>
+      <description>Setup environment variables Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.
+PROJECT_ID= REGION= Now we can check them
+echo $PROJECT_ID echo $REGION Now we don&amp;rsquo;t need to remember the project id.
+gcloud config set project ${PROJECT_ID} Login
+gcloud auth application-default login </description>
     </item>
     
     <item>

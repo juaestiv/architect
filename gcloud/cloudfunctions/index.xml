@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Functions on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/gcloud/cloudfunctions/</link>
+    <description>Recent content in Cloud Functions on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/gcloud/cloudfunctions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing cloud functions locally</title>
+      <link>https://architect.proyectoomega.es/gcloud/cloudfunctions/testingcfuntionslocally/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/cloudfunctions/testingcfuntionslocally/</guid>
+      <description>Prerequisites gcloud cli
+Create directory  create an empty directpry and npm init.  mkdir cloud-functions-local &amp;amp;&amp;amp; cd &amp;#34;$_&amp;#34; npm init Install function frameworks  npm install --save-dev @google-cloud/functions-framework write index.js function  exports.handleWhatever = (req, res) =&amp;gt; {  console.log(`Request body: ${JSON.stringify(req.body)}`)  res.status(200).send({  sessionInfo: {  parameters: {  customer_verified:true  }  }  }) } Start the function  npx functions-framework --target=handleWhatever --port=4444 send a post request with postman or curl  curl --header &amp;#34;Content-Type: application/json&amp;#34; \  --request POST \  --data &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;xyz&amp;#34;,&amp;#34;password&amp;#34;:&amp;#34;xyz&amp;#34;}&amp;#39; \  http://localhost:4444/ </description>
+    </item>
+    
+  </channel>
+</rss>

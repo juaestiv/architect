@@ -22,15 +22,15 @@
 
 
 
-<link rel="canonical" href="https://architect.proyectoomega.es/iac/terraform/terraform/" />
+<link rel="canonical" href="https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/" />
 
 
   <meta charset="utf-8" />
-  <title>Terraform Environment Variables</title>
+  <title>Terraform  GCP Cloud Functions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Hugo 0.99.1" />
-  <meta name="description" content="Terraform Environment Variables - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
-  <meta name="keywords" content="gcloud,, google, cloud, platform,, gcp,, remote, development,, terraform,, juan, antonio, estival">
+  <meta name="description" content="Terraform  GCP Cloud Functions - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, google, cloud, platform,, gcp,, remote, development,, terraform,, juan, antonio, estival,, cloud, functions">
  
   
   
@@ -114,33 +114,33 @@ if (!doNotTrack) {
 
   
      
-  <meta name="twitter:title" content="Terraform Environment Variables" />
+  <meta name="twitter:title" content="Terraform  GCP Cloud Functions" />
   <meta
     name="twitter:description"
-    content="Setup environment variables Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.
-PROJECT_ID= REGION= Now we can check them
-echo $PROJECT_ID echo $REGION Now we don&rsquo;t need to remember the project id.
-gcloud config set project ${PROJECT_ID} Login
-gcloud auth application-default login "
+    content="Setup environment variables https://cloud.google.com/functions/docs/tutorials/terraform
+PROJECT_ID=bubbly-journey-361318 REGION= BILLING_ACCOUNT_ID= gcloud config set project ${PROJECT_ID} We can create a project from cli
+gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --organization=nnnnn gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --folder=nnnnnnn gcloud beta billing projects link ${PROJECT_ID} --billing-account=${BILLING_ACCOUNT_ID} Maybe you have to change the user. In my case
+gcloud auth login login with privileged user make the changes can come back again to the less privileged user
+gcloud auth login Create two folders"
   />
-    <meta property="og:title" content="Terraform Environment Variables" />
-<meta property="og:description" content="Setup environment variables Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.
-PROJECT_ID= REGION= Now we can check them
-echo $PROJECT_ID echo $REGION Now we don&rsquo;t need to remember the project id.
-gcloud config set project ${PROJECT_ID} Login
-gcloud auth application-default login " />
+    <meta property="og:title" content="Terraform  GCP Cloud Functions" />
+<meta property="og:description" content="Setup environment variables https://cloud.google.com/functions/docs/tutorials/terraform
+PROJECT_ID=bubbly-journey-361318 REGION= BILLING_ACCOUNT_ID= gcloud config set project ${PROJECT_ID} We can create a project from cli
+gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --organization=nnnnn gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --folder=nnnnnnn gcloud beta billing projects link ${PROJECT_ID} --billing-account=${BILLING_ACCOUNT_ID} Maybe you have to change the user. In my case
+gcloud auth login login with privileged user make the changes can come back again to the less privileged user
+gcloud auth login Create two folders" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://architect.proyectoomega.es/iac/terraform/terraform/" /><meta property="article:section" content="IaC" />
+<meta property="og:url" content="https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/" /><meta property="article:section" content="IaC" />
 <meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
 <meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
 
  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Terraform Environment Variables"/>
-<meta name="twitter:description" content="Setup environment variables Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.
-PROJECT_ID= REGION= Now we can check them
-echo $PROJECT_ID echo $REGION Now we don&rsquo;t need to remember the project id.
-gcloud config set project ${PROJECT_ID} Login
-gcloud auth application-default login "/>
+<meta name="twitter:title" content="Terraform  GCP Cloud Functions"/>
+<meta name="twitter:description" content="Setup environment variables https://cloud.google.com/functions/docs/tutorials/terraform
+PROJECT_ID=bubbly-journey-361318 REGION= BILLING_ACCOUNT_ID= gcloud config set project ${PROJECT_ID} We can create a project from cli
+gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --organization=nnnnn gcloud projects create PROJECT_ID_UNIQUE_NAME --name=&#34;My App&#34; --folder=nnnnnnn gcloud beta billing projects link ${PROJECT_ID} --billing-account=${BILLING_ACCOUNT_ID} Maybe you have to change the user. In my case
+gcloud auth login login with privileged user make the changes can come back again to the less privileged user
+gcloud auth login Create two folders"/>
 
 
 
@@ -290,7 +290,7 @@ gcloud auth application-default login "/>
   data-nav-id="https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/"
   title="Terraform  GCP Cloud Functions"
   class="sidelist
-  "
+  active"
 >
   <a href="https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/">
     Terraform  GCP Cloud Functions
@@ -316,7 +316,7 @@ gcloud auth application-default login "/>
   data-nav-id="https://architect.proyectoomega.es/iac/terraform/terraform/"
   title="Terraform Environment Variables"
   class="sidelist
-  active"
+  "
 >
   <a href="https://architect.proyectoomega.es/iac/terraform/terraform/">
     Terraform Environment Variables
@@ -350,19 +350,50 @@ gcloud auth application-default login "/>
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white" id="content">
-          <h2 class="mb-5" id="title">Terraform Environment Variables</h2>
+          <h2 class="mb-5" id="title">Terraform  GCP Cloud Functions</h2>
           
           <div class="content"><h3 id="setup-environment-variables">Setup environment variables</h3>
-<p>Whenever we work with gcloud commands and cli commands in general it is a good practice to setup some variables to save some typing later.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>PROJECT_ID<span style="color:#f92672">=</span>
+<p><a href="https://cloud.google.com/functions/docs/tutorials/terraform"
+   title="https://cloud.google.com/functions/docs/tutorials/terraform" 
+   target="_blank" rel="nofollow noopener">
+  https://cloud.google.com/functions/docs/tutorials/terraform</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>PROJECT_ID<span style="color:#f92672">=</span>bubbly-journey-361318
 </span></span><span style="display:flex;"><span>REGION<span style="color:#f92672">=</span>
-</span></span></code></pre></div><p>Now we can check them</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo $PROJECT_ID
-</span></span><span style="display:flex;"><span>echo $REGION
-</span></span></code></pre></div><p>Now we don&rsquo;t need to remember the project id.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud config set project <span style="color:#e6db74">${</span>PROJECT_ID<span style="color:#e6db74">}</span>
-</span></span></code></pre></div><p>Login</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud auth application-default login
+</span></span><span style="display:flex;"><span>BILLING_ACCOUNT_ID<span style="color:#f92672">=</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud config set project <span style="color:#e6db74">${</span>PROJECT_ID<span style="color:#e6db74">}</span>
+</span></span></code></pre></div><p>We can create a project from cli</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud projects create PROJECT_ID_UNIQUE_NAME --name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;My App&#34;</span> --organization<span style="color:#f92672">=</span>nnnnn
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud projects create PROJECT_ID_UNIQUE_NAME --name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;My App&#34;</span> --folder<span style="color:#f92672">=</span>nnnnnnn
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud beta billing projects link <span style="color:#e6db74">${</span>PROJECT_ID<span style="color:#e6db74">}</span> --billing-account<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>BILLING_ACCOUNT_ID<span style="color:#e6db74">}</span>
+</span></span></code></pre></div><p>Maybe you have to change the user. In my case</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud auth login
+</span></span></code></pre></div><p>login with privileged user
+make the changes can come back again to the less privileged user</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gcloud auth login
+</span></span></code></pre></div><p>Create two folders</p>
+<ul>
+<li>src</li>
+<li>terraform</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── src
+</span></span><span style="display:flex;"><span>└── terraform
+</span></span></code></pre></div><p>On the root folder initialize npm</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npm init
+</span></span></code></pre></div><p>And install whatever package you need.</p>
+<p>Create src/index.js
+Modify package.json &ldquo;main&rdquo;: &ldquo;src/index.js&rdquo;,</p>
+<p>terraform/backend.tf to keep state in local.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">terraform</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backend</span> <span style="color:#e6db74">&#34;local&#34;</span> {}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>terraform/variables.tf</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">variable</span> <span style="color:#e6db74">&#34;project&#34;</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">default</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PROJECT_ID&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">variable</span> <span style="color:#e6db74">&#34;region&#34;</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">default</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;us-central1&#34;</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">Choose</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">region</span>
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">
@@ -373,11 +404,11 @@ gcloud auth application-default login "/>
                       
                                                
                      
-                         
-                         
                           
                   
                      
+                         
+                         
               
               
                                                  
@@ -404,18 +435,18 @@ gcloud auth application-default login "/>
                 
             <a
               class="nav nav-prev"
-              href="https://architect.proyectoomega.es/iac/terraform/terraformcdk/"
+              href="https://architect.proyectoomega.es/iac/terraform/terraformincloudshell/"
               aria-label="Previous page"
               ><i class="ti-arrow-left mr-2"></i>
-              <span class="d-none d-md-block">Terraform CDK</span></a
+              <span class="d-none d-md-block">Terraform in Cloud Shell</span></a
             >
              
             <a
               class="nav nav-next"
-              href="https://architect.proyectoomega.es/iac/terraform/terraformmodules/"
+              href="https://architect.proyectoomega.es/iac/terraform/terraformcdk/"
               aria-label="Previous page"
             >
-              <span class="d-none d-md-block">Terraform Modules</span
+              <span class="d-none d-md-block">Terraform CDK</span
               ><i class="ti-arrow-right ml-2"></i
             ></a>
             
