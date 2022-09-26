@@ -57,6 +57,31 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/angular/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/api/graphql/appsyncmock/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -102,8 +127,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/angular/angularskeleton/</loc>
+    <lastmod>2022-04-03T08:15:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

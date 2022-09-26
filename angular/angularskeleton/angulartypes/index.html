@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+
+
+
+<link rel="canonical" href="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/" />
+
+
+  <meta charset="utf-8" />
+  <title>Typescript Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Typescript Types - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, angular,, google, cloud, platform,, gcp,, remote, development,, juan, antonio, estival">
+ 
+  
+  
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Typescript Types" />
+  <meta
+    name="twitter:description"
+    content="Types To create a dummy file with sample products and their types.
+First create a file with the types Here an example with two types.
+export type Person = {  name: string;  country: string; };  export type sampleElement = {  _id:string,  langCode: string,  name: number,  image: string,  description:string,  brand: string,  category: string,  price: number,  countInStock: number,  rating: number,  numReviews: number,  }; Now create an array of elements of the required type importing the type of course"
+  />
+    <meta property="og:title" content="Typescript Types" />
+<meta property="og:description" content="Types To create a dummy file with sample products and their types.
+First create a file with the types Here an example with two types.
+export type Person = {  name: string;  country: string; };  export type sampleElement = {  _id:string,  langCode: string,  name: number,  image: string,  description:string,  brand: string,  category: string,  price: number,  countInStock: number,  rating: number,  numReviews: number,  }; Now create an array of elements of the required type importing the type of course" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/" /><meta property="article:section" content="angular" />
+<meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Typescript Types"/>
+<meta name="twitter:description" content="Types To create a dummy file with sample products and their types.
+First create a file with the types Here an example with two types.
+export type Person = {  name: string;  country: string; };  export type sampleElement = {  _id:string,  langCode: string,  name: number,  image: string,  description:string,  brand: string,  category: string,  price: number,  countInStock: number,  rating: number,  numReviews: number,  }; Now create an array of elements of the required type importing the type of course"/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                         
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/"
+  title="Angular"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/">
+    Angular
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/"
+  title="Angular Skeleton"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/">
+    Angular Skeleton
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/"
+  title="Angular Navbar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/">
+    Angular Navbar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/"
+  title="Angular new project"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/">
+    Angular new project
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/"
+  title="Angular Responsive Layout"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/">
+    Angular Responsive Layout
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/"
+  title="Angular Sidebar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/">
+    Angular Sidebar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/"
+  title="Typescript Types"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/">
+    Typescript Types
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Typescript Types</h2>
+          
+          <div class="content"><h2 id="types">Types</h2>
+<p>To create a dummy file with sample products and their types.</p>
+<p>First create a file with the types
+Here an example with two types.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Person</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">country</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">sampleElement</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>  };
+</span></span></code></pre></div><p>Now create an array of elements of the required type importing the type of course</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sampleElement</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../types/sampleTypes&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sampleData</span>:<span style="color:#66d9ef">sampleElement</span>[] <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;1&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Barcelona&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/barcelona.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;Barcelona és una ciutat que atreu molts turistes, sobretot a partir del Jocs Olímpics que shi van celebrar el 1992. La xifra rècord en nombre de visitants anuals es va registrar el 2019, amb 11.977.277 turistes i prop de 33 milions de pernoctacions en hotels i pisos turístics, comptant-hi només allotjaments oficials&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">249.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">7</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">1263</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;2&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Alacant&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/alicante.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;Situada a la costa mediterrània, té una població de 337.304 habitants (2021) i forma una conurbació de més de 452.462 habitants amb diverses localitats properes com Sant Vicent del Raspeig, Sant Joan dAlacant, Mutxamel i el Campello. Estadísticament sassocia també a làrea metropolitana dAlacant-Elx, que té 757.443 habitants.&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">199.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">4.5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">567</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;3&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Tenerife&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/tenerife.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;De gran importància és el Carnaval de Santa Cruz de Tenerife, declarat Festa d Interès Turístic Internacional i considerat com un dels de més rellevància a nivell mundial&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">329.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">780</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;4&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Madrid&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/madrid.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;Madrid també és un dels centres culturals més importants d Europa i del món, i acull tres museus de referència internacional: el Museu del Prado, el Museu Thyssen-Bornemisza i el Museu Reina Sofia.&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">299.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">900</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;5&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Mallorca&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/mallorca.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;Mallorca és una illa de la Mediterrània, la més gran de les Illes Balears[1] —per això també s anomena la Balear Major—, i és lloc d origen dels mallorquins i les mallorquines&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">349.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">7</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">1673</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;6&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">langCode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Benidorm&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/images/benidorm.jpeg&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;Coneguda arreu per les seues platges, gratacels i ambient nocturn i per ser una destinació turística de gents  arreu d Europa.&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cymbal&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Electronics&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">price</span>: <span style="color:#66d9ef">189.99</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countInStock</span>: <span style="color:#66d9ef">3</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rating</span>: <span style="color:#66d9ef">4</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">numReviews</span>: <span style="color:#66d9ef">1500</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">sampleData</span>
+</span></span></code></pre></div></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 03 Apr 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                                             
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+              
+                                    
+                         
+              
+              
+                                            
+                     
+                         
+                         
+                         
+                          
+              
+              
+                  
+                                             
+              
+                                    
+              
+                                    
+              
+              
+                                    
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Angular Sidebar</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/gcloud/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">gCloud</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+
+  </body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>

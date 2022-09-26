@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular Skeleton on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/angular/angularskeleton/</link>
+    <description>Recent content in Angular Skeleton on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/angular/angularskeleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular Navbar</title>
+      <link>https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/</guid>
+      <description>Navbar ng g c components/nav-bar On app.moudule import material toolbar and any other material component
+import { MatToolbarModule } from &amp;#39;@angular/material/toolbar&amp;#39; imports: [  ...,  MatToolbarModule  ], Html of the
+ &amp;lt;mat-toolbar color=&amp;#34;primary&amp;#34;&amp;gt;  &amp;lt;button mat-icon-button class=&amp;#34;example-icon&amp;#34; aria-label=&amp;#34;Example icon-button with menu icon&amp;#34;&amp;gt;  &amp;lt;mat-icon&amp;gt;menu&amp;lt;/mat-icon&amp;gt;  &amp;lt;/button&amp;gt;  &amp;lt;span&amp;gt;My App&amp;lt;/span&amp;gt;  &amp;lt;span class=&amp;#34;example-spacer&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;  &amp;lt;button mat-icon-button class=&amp;#34;example-icon favorite-icon&amp;#34; aria-label=&amp;#34;Example icon-button with heart icon&amp;#34;&amp;gt;  &amp;lt;mat-icon&amp;gt;favorite&amp;lt;/mat-icon&amp;gt;  &amp;lt;/button&amp;gt;  &amp;lt;button mat-icon-button class=&amp;#34;example-icon&amp;#34; aria-label=&amp;#34;Example icon-button with share icon&amp;#34;&amp;gt;  &amp;lt;mat-icon&amp;gt;share&amp;lt;/mat-icon&amp;gt;  &amp;lt;/button&amp;gt;  &amp;lt;/mat-toolbar&amp;gt;  Don`t forget to edit the css for example to make the spacer works</description>
+    </item>
+    
+    <item>
+      <title>Angular new project</title>
+      <link>https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/</guid>
+      <description>Create and install packages npx ng new &amp;lt;projectname&amp;gt; -&amp;gt; Routing yes -&amp;gt; CSS
+Install material
+cd &amp;lt;projectname&amp;gt; ng add @angular/material Homescreen Create the homescree component
+ng g c screens/homeScreen Import that component from app-routing.module.ts and check the the Routes , RouterModule are imported and array created.
+import { HomeScreenComponent } from &amp;#39;./screens/home-screen/home-screen.component&amp;#39;; import { RouterModule, Routes } from &amp;#39;@angular/router&amp;#39;;  const routes: Routes = []; Check that the app.module imports the app-routing-moudule Create a rout in app-routing.</description>
+    </item>
+    
+    <item>
+      <title>Angular Responsive Layout</title>
+      <link>https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/</guid>
+      <description>Install Package npm i -s @angular/flex-layout @angular/cdk Imports
+import { FlexLayoutModule } from &amp;#39;@angular/flex-layout&amp;#39;; ...  @NgModule({  ...  imports: [ FlexLayoutModule ],  ... }); Sample
+ &amp;lt;div fxShow=&amp;#34;true&amp;#34; fxHide.lt-md=&amp;#34;true&amp;#34;&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/about-us&amp;#34;&amp;gt;About us&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/prices&amp;#34;&amp;gt;Prices&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/start-page&amp;#34;&amp;gt;Start page&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/offer&amp;#34;&amp;gt;Offer&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;  &amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Angular Sidebar</title>
+      <link>https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/</guid>
+      <description>Install Package  &amp;lt;mat-sidenav-container fxFlexFill class=&amp;#34;example-container&amp;#34;&amp;gt;   &amp;lt;mat-sidenav color=&amp;#34;primary&amp;#34; #sidenav fxLayout=&amp;#34;column&amp;#34; mode=&amp;#34;over&amp;#34; opened=&amp;#34;false&amp;#34; fxHide.gt-sm=&amp;#34;true&amp;#34;&amp;gt;  &amp;lt;div fxLayout=&amp;#34;column&amp;#34;&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/about-us&amp;#34;&amp;gt;About us&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/prices&amp;#34;&amp;gt;Prices&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/start-page&amp;#34;&amp;gt;Start page&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/offer&amp;#34;&amp;gt;Offer&amp;lt;/a&amp;gt;  &amp;lt;a mat-button routerLink=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;  &amp;lt;/div&amp;gt;  &amp;lt;/mat-sidenav&amp;gt;  &amp;lt;mat-sidenav-content fxFlexFill&amp;gt;  Awesome content  &amp;lt;/mat-sidenav-content&amp;gt;  &amp;lt;/mat-sidenav-container&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Typescript Types</title>
+      <link>https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/</guid>
+      <description>Types To create a dummy file with sample products and their types.
+First create a file with the types Here an example with two types.
+export type Person = {  name: string;  country: string; };  export type sampleElement = {  _id:string,  langCode: string,  name: number,  image: string,  description:string,  brand: string,  category: string,  price: number,  countInStock: number,  rating: number,  numReviews: number,  }; Now create an array of elements of the required type importing the type of course</description>
+    </item>
+    
+  </channel>
+</rss>
