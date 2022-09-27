@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speech To Text on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/gcloud/stt/</link>
+    <description>Recent content in Speech To Text on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/gcloud/stt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode connected to Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/gcloud/stt/sttcurltest/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/stt/sttcurltest/</guid>
+      <description>STT Curl text  export credentials  export GOOGLE_APPLICATION_CREDENTIALS=fichero_credentials.json Create a json file  {  &amp;#34;config&amp;#34;: {  &amp;#34;encoding&amp;#34;:&amp;#34;FLAC&amp;#34;,  &amp;#34;sampleRateHertz&amp;#34;: 16000,  &amp;#34;languageCode&amp;#34;: &amp;#34;en-US&amp;#34;,  &amp;#34;enableWordTimeOffsets&amp;#34;: false  },  &amp;#34;audio&amp;#34;: {  &amp;#34;uri&amp;#34;:&amp;#34;gs://cloud-samples-tests/speech/brooklyn.flac&amp;#34;  }  } execjute the curl  curl -s -H &amp;#34;Content-Type: application/json&amp;#34; \  -H &amp;#34;Authorization: Bearer &amp;#34;$(gcloud auth application-default print-access-token) \  https://speech.googleapis.com/v1/speech:recognize \  -d @sync-request.json You can try in postman with a post request https://speech.</description>
+    </item>
+    
+  </channel>
+</rss>

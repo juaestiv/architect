@@ -385,6 +385,12 @@ if (!doNotTrack) {
           	},
           	
           	{
+          		value: "Test Dialogflow CX with Oauth in postman",
+          		label: "<p>Prerequisites To list agents\n Confgiure a GET Request  https:\/\/global-dialogflow.googleapis.com\/v3\/projects\/hospitality-demo-361210\/locations\/global\/agents Authorization TAB  Type OAUTH 2.0 Add authorization data to: Request Headers Token Name: a name Grant Type: Authorization Code Callback URL: https:\/\/oauth.pstmn.io\/v1\/browser-callback Don\u0026rsquo;t check use browser Auth URL https:\/\/accounts.google.com\/o\/oauth2\/auth Access Token URL: https:\/\/accounts.google.com\/o\/oauth2\/token Client Id: Use variables Client Secret: Use Variables Scope: https:\/\/www.googleapis.com\/auth\/dialogflow Client Authentication: send as basic auth header    Click on generate new access token\nConfigure Oauth in GCP.\n redirect url https:\/\/oauth.pstmn.io\/v1\/browser-callback  </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/dialogflowcx\/vscodeclousshell\/"
+          	},
+          	
+          	{
           		value: "Testing cloud functions locally",
           		label: "<p>Prerequisites gcloud cli\nCreate directory  create an empty directpry and npm init.  mkdir cloud-functions-local \u0026amp;\u0026amp; cd \u0026#34;$_\u0026#34; npm init Install function frameworks  npm install --save-dev @google-cloud\/functions-framework write index.js function  exports.handleWhatever = (req, res) =\u0026gt; {  console.log(`Request body: ${JSON.stringify(req.body)}`)  res.status(200).send({  sessionInfo: {  parameters: {  customer_verified:true  }  }  }) } Start the function  npx functions-framework --target=handleWhatever --port=4444 send a post request with postman or curl  curl --header \u0026#34;Content-Type: application\/json\u0026#34; \\  --request POST \\  --data \u0026#39;{\u0026#34;username\u0026#34;:\u0026#34;xyz\u0026#34;,\u0026#34;password\u0026#34;:\u0026#34;xyz\u0026#34;}\u0026#39; \\  http:\/\/localhost:4444\/ </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cloudfunctions\/testingcfuntionslocally\/"
@@ -400,6 +406,12 @@ if (!doNotTrack) {
           		value: "VSCode connected to Cloud Shell",
           		label: "<p>Prerequisites I assume that you have already installed and configured gcloud cli in your environment.\nConfigure your cloudshell  Git Terraform Brew  How to access from your local VS code to your cloud shell gcloud auth login #con el usuario que quiera. Tenia abierto el browser con el chrome en el usuario que quiero tener gcloud cloud-shell ssh # This generates keys in .ssh gcloud config set project omega-358617 # set up you project gcloud cloud-shell ssh # accessing using ssh Configure your ssh Setup the config file\n# Gcloud Host gcloud  Port 6000  User dev  HostName x.x.x.x  ForwardAgent yes  IdentityFile ~\/.ssh\/google_compute_engine To see your public ip\ngcloud cloud-shell ssh --dry-run The ip changes\nVSCode. Install remote dev\n CMD-Shift-P connect to ssh choos your host access  </p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/remotedev\/vscodeclousshell\/"
+          	},
+          	
+          	{
+          		value: "VSCode connected to Cloud Shell",
+          		label: "<p>STT Curl text  export credentials  export GOOGLE_APPLICATION_CREDENTIALS=fichero_credentials.json Create a json file  {  \u0026#34;config\u0026#34;: {  \u0026#34;encoding\u0026#34;:\u0026#34;FLAC\u0026#34;,  \u0026#34;sampleRateHertz\u0026#34;: 16000,  \u0026#34;languageCode\u0026#34;: \u0026#34;en-US\u0026#34;,  \u0026#34;enableWordTimeOffsets\u0026#34;: false  },  \u0026#34;audio\u0026#34;: {  \u0026#34;uri\u0026#34;:\u0026#34;gs:\/\/cloud-samples-tests\/speech\/brooklyn.flac\u0026#34;  }  } execjute the curl  curl -s -H \u0026#34;Content-Type: application\/json\u0026#34; \\  -H \u0026#34;Authorization: Bearer \u0026#34;$(gcloud auth application-default print-access-token) \\  https:\/\/speech.googleapis.com\/v1\/speech:recognize \\  -d @sync-request.json You can try in postman with a post request https:\/\/speech.googleapis.com\/v1\/speech:recognize\nraw -\u0026gt; JSON\n{  \u0026#34;config\u0026#34;: {  \u0026#34;encoding\u0026#34;:\u0026#34;FLAC\u0026#34;,  \u0026#34;sampleRateHertz\u0026#34;: 16000,  \u0026#34;languageCode\u0026#34;: \u0026#34;en-US\u0026#34;,  \u0026#34;enableWordTimeOffsets\u0026#34;: false  },  \u0026#34;audio\u0026#34;: {  \u0026#34;uri\u0026#34;:\u0026#34;gs:\/\/cloud-samples-tests\/speech\/brooklyn.flac\u0026#34;  }  } AUTHORIZATION BEARER TOKEN paste the content of the TOKEN command\ngcloud auth application-default print-access-token in a terminal with the\nexport GOOGLE_APPLICATION_CREDENTIALS=fichero_credentials.json Postman with api key Go to api\u0026rsquo;s credentials and create an api key in autorization choose api key X-goog-api-key add to header\n</p><p>gcloud,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/stt\/sttcurltest\/"
           	},
           	
           	{
@@ -421,6 +433,12 @@ if (!doNotTrack) {
           	},
           	
           	{
+          		value: "Dialogflow CX ",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/dialogflowcx\/"
+          	},
+          	
+          	{
           		value: "gCloud CLI",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/"
@@ -436,6 +454,12 @@ if (!doNotTrack) {
           		value: "Remote Development",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/remotedev\/"
+          	},
+          	
+          	{
+          		value: "Speech To Text",
+          		label: "<p></p>",
+          		url:"https:\/\/architect.proyectoomega.es\/gcloud\/stt\/"
           	},
           	
           	{

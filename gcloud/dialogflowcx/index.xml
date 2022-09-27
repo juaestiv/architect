@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dialogflow CX  on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/gcloud/dialogflowcx/</link>
+    <description>Recent content in Dialogflow CX  on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/gcloud/dialogflowcx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Dialogflow CX with Oauth in postman</title>
+      <link>https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/</guid>
+      <description>Prerequisites To list agents
+ Confgiure a GET Request  https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents Authorization TAB  Type OAUTH 2.0 Add authorization data to: Request Headers Token Name: a name Grant Type: Authorization Code Callback URL: https://oauth.pstmn.io/v1/browser-callback Don&amp;rsquo;t check use browser Auth URL https://accounts.google.com/o/oauth2/auth Access Token URL: https://accounts.google.com/o/oauth2/token Client Id: Use variables Client Secret: Use Variables Scope: https://www.googleapis.com/auth/dialogflow Client Authentication: send as basic auth header    Click on generate new access token</description>
+    </item>
+    
+  </channel>
+</rss>

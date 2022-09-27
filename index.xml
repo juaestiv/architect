@@ -206,6 +206,16 @@ The idea is that it will be a variable that will replace the CIDR blocks acordin
     </item>
     
     <item>
+      <title>Test Dialogflow CX with Oauth in postman</title>
+      <link>https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/</guid>
+      <description>Prerequisites To list agents
+ Confgiure a GET Request  https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents Authorization TAB  Type OAUTH 2.0 Add authorization data to: Request Headers Token Name: a name Grant Type: Authorization Code Callback URL: https://oauth.pstmn.io/v1/browser-callback Don&amp;rsquo;t check use browser Auth URL https://accounts.google.com/o/oauth2/auth Access Token URL: https://accounts.google.com/o/oauth2/token Client Id: Use variables Client Secret: Use Variables Scope: https://www.googleapis.com/auth/dialogflow Client Authentication: send as basic auth header    Click on generate new access token</description>
+    </item>
+    
+    <item>
       <title>Testing cloud functions locally</title>
       <link>https://architect.proyectoomega.es/gcloud/cloudfunctions/testingcfuntionslocally/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -234,6 +244,15 @@ export type Person = {  name: string;  country: string; };  export type sampleEl
       <guid>https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/</guid>
       <description>Prerequisites I assume that you have already installed and configured gcloud cli in your environment.
 Configure your cloudshell  Git Terraform Brew  How to access from your local VS code to your cloud shell gcloud auth login #con el usuario que quiera. Tenia abierto el browser con el chrome en el usuario que quiero tener gcloud cloud-shell ssh # This generates keys in .ssh gcloud config set project omega-358617 # set up you project gcloud cloud-shell ssh # accessing using ssh Configure your ssh Setup the config file</description>
+    </item>
+    
+    <item>
+      <title>VSCode connected to Cloud Shell</title>
+      <link>https://architect.proyectoomega.es/gcloud/stt/sttcurltest/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/stt/sttcurltest/</guid>
+      <description>STT Curl text  export credentials  export GOOGLE_APPLICATION_CREDENTIALS=fichero_credentials.json Create a json file  {  &amp;#34;config&amp;#34;: {  &amp;#34;encoding&amp;#34;:&amp;#34;FLAC&amp;#34;,  &amp;#34;sampleRateHertz&amp;#34;: 16000,  &amp;#34;languageCode&amp;#34;: &amp;#34;en-US&amp;#34;,  &amp;#34;enableWordTimeOffsets&amp;#34;: false  },  &amp;#34;audio&amp;#34;: {  &amp;#34;uri&amp;#34;:&amp;#34;gs://cloud-samples-tests/speech/brooklyn.flac&amp;#34;  }  } execjute the curl  curl -s -H &amp;#34;Content-Type: application/json&amp;#34; \  -H &amp;#34;Authorization: Bearer &amp;#34;$(gcloud auth application-default print-access-token) \  https://speech.googleapis.com/v1/speech:recognize \  -d @sync-request.json You can try in postman with a post request https://speech.</description>
     </item>
     
   </channel>
