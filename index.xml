@@ -157,6 +157,15 @@ Value: ccccc 4. body (check graphql)</description>
     </item>
     
     <item>
+      <title>Python Sample for Mic Realtime transcription</title>
+      <link>https://architect.proyectoomega.es/gcloud/stt/pythonmictest/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/stt/pythonmictest/</guid>
+      <description>Prerequs  Enable the API Create the JSON keys export the credentials  export GOOGLE_APPLICATION_CREDENTIALS=yourpath install portaudio  brew install portaudio brew link portaudio Create a transcribe_streaming_mic.py  #!/usr/bin/env python  # Copyright 2017 Google Inc. All Rights Reserved. # # Licensed under the Apache License, Version 2.0 (the &amp;#34;License&amp;#34;); # you may not use this file except in compliance with the License. # You may obtain a copy of the License at # # http://www.</description>
+    </item>
+    
+    <item>
       <title>Terraform  GCP Cloud Functions</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>

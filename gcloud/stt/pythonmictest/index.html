@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+
+
+
+<link rel="canonical" href="https://architect.proyectoomega.es/gcloud/stt/pythonmictest/" />
+
+
+  <meta charset="utf-8" />
+  <title>Python Sample for Mic Realtime transcription</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Python Sample for Mic Realtime transcription - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, google, cloud, platform,, gcp,, remote, development,, juan, antonio, estival">
+ 
+  
+  
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Python Sample for Mic Realtime transcription" />
+  <meta
+    name="twitter:description"
+    content="Prerequs  Enable the API Create the JSON keys export the credentials  export GOOGLE_APPLICATION_CREDENTIALS=yourpath install portaudio  brew install portaudio brew link portaudio Create a transcribe_streaming_mic.py  #!/usr/bin/env python  # Copyright 2017 Google Inc. All Rights Reserved. # # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;); # you may not use this file except in compliance with the License. # You may obtain a copy of the License at # # http://www."
+  />
+    <meta property="og:title" content="Python Sample for Mic Realtime transcription" />
+<meta property="og:description" content="Prerequs  Enable the API Create the JSON keys export the credentials  export GOOGLE_APPLICATION_CREDENTIALS=yourpath install portaudio  brew install portaudio brew link portaudio Create a transcribe_streaming_mic.py  #!/usr/bin/env python  # Copyright 2017 Google Inc. All Rights Reserved. # # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;); # you may not use this file except in compliance with the License. # You may obtain a copy of the License at # # http://www." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/gcloud/stt/pythonmictest/" /><meta property="article:section" content="gCloud" />
+<meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python Sample for Mic Realtime transcription"/>
+<meta name="twitter:description" content="Prerequs  Enable the API Create the JSON keys export the credentials  export GOOGLE_APPLICATION_CREDENTIALS=yourpath install portaudio  brew install portaudio brew link portaudio Create a transcribe_streaming_mic.py  #!/usr/bin/env python  # Copyright 2017 Google Inc. All Rights Reserved. # # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;); # you may not use this file except in compliance with the License. # You may obtain a copy of the License at # # http://www."/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/"
+  title="gCloud"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/">
+    gCloud
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/cloudfunctions/"
+  title="Cloud Functions"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/cloudfunctions/">
+    Cloud Functions
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/cloudfunctions/testingcfuntionslocally/"
+  title="Testing cloud functions locally"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/cloudfunctions/testingcfuntionslocally/">
+    Testing cloud functions locally
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/dialogflowcx/"
+  title="Dialogflow CX "
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/dialogflowcx/">
+    Dialogflow CX 
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/"
+  title="Test Dialogflow CX with Oauth in postman"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/dialogflowcx/vscodeclousshell/">
+    Test Dialogflow CX with Oauth in postman
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/cli/"
+  title="gCloud CLI"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/cli/">
+    gCloud CLI
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/cli/gcloud101/"
+  title="gCloud Basic Commands"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/cli/gcloud101/">
+    gCloud Basic Commands
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/remotedev/"
+  title="Remote Development"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/remotedev/">
+    Remote Development
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/"
+  title="VSCode connected to Cloud Shell"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/remotedev/vscodeclousshell/">
+    VSCode connected to Cloud Shell
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/stt/"
+  title="Speech To Text"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/stt/">
+    Speech To Text
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/stt/pythonmictest/"
+  title="Python Sample for Mic Realtime transcription"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/gcloud/stt/pythonmictest/">
+    Python Sample for Mic Realtime transcription
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/gcloud/stt/sttcurltest/"
+  title="VSCode connected to Cloud Shell"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/gcloud/stt/sttcurltest/">
+    VSCode connected to Cloud Shell
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Python Sample for Mic Realtime transcription</h2>
+          
+          <div class="content"><h2 id="prerequs">Prerequs</h2>
+<ol>
+<li>Enable the API</li>
+<li>Create the JSON keys</li>
+<li>export the credentials</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>export GOOGLE_APPLICATION_CREDENTIALS<span style="color:#f92672">=</span>yourpath
+</span></span></code></pre></div><ol start="4">
+<li>install portaudio</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install portaudio
+</span></span><span style="display:flex;"><span>brew link portaudio
+</span></span></code></pre></div><ol start="5">
+<li>Create a transcribe_streaming_mic.py</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Copyright 2017 Google Inc. All Rights Reserved.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># you may not use this file except in compliance with the License.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You may obtain a copy of the License at</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#      http://www.apache.org/licenses/LICENSE-2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Unless required by applicable law or agreed to in writing, software</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># distributed under the License is distributed on an &#34;AS IS&#34; BASIS,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># See the License for the specific language governing permissions and</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># limitations under the License.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Google Cloud Speech API sample application using the streaming API.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">NOTE: This module requires the additional dependency `pyaudio`. To install
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">using pip:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    pip install pyaudio
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Example usage:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    python transcribe_streaming_mic.py
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># [START speech_transcribe_streaming_mic]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> division
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> google.cloud <span style="color:#f92672">import</span> speech
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pyaudio
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> six.moves <span style="color:#f92672">import</span> queue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Audio recording parameters</span>
+</span></span><span style="display:flex;"><span>RATE <span style="color:#f92672">=</span> <span style="color:#ae81ff">16000</span>
+</span></span><span style="display:flex;"><span>CHUNK <span style="color:#f92672">=</span> int(RATE <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span>)  <span style="color:#75715e"># 100ms</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MicrophoneStream</span>(object):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Opens a recording stream as a generator yielding the audio chunks.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, rate, chunk):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_rate <span style="color:#f92672">=</span> rate
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_chunk <span style="color:#f92672">=</span> chunk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create a thread-safe buffer of audio data</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_buff <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span>Queue()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>closed <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __enter__(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_audio_interface <span style="color:#f92672">=</span> pyaudio<span style="color:#f92672">.</span>PyAudio()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_audio_stream <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_audio_interface<span style="color:#f92672">.</span>open(
+</span></span><span style="display:flex;"><span>            format<span style="color:#f92672">=</span>pyaudio<span style="color:#f92672">.</span>paInt16,
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># The API currently only supports 1-channel (mono) audio</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># https://goo.gl/z757pE</span>
+</span></span><span style="display:flex;"><span>            channels<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>            rate<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_rate,
+</span></span><span style="display:flex;"><span>            input<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>            frames_per_buffer<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_chunk,
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Run the audio stream asynchronously to fill the buffer object.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># This is necessary so that the input device&#39;s buffer doesn&#39;t</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># overflow while the calling thread makes network requests, etc.</span>
+</span></span><span style="display:flex;"><span>            stream_callback<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_fill_buffer,
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>closed <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __exit__(self, type, value, traceback):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_audio_stream<span style="color:#f92672">.</span>stop_stream()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_audio_stream<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>closed <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Signal the generator to terminate so that the client&#39;s</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># streaming_recognize method will not block the process termination.</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_buff<span style="color:#f92672">.</span>put(<span style="color:#66d9ef">None</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_audio_interface<span style="color:#f92672">.</span>terminate()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_fill_buffer</span>(self, in_data, frame_count, time_info, status_flags):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Continuously collect data from the audio stream, into the buffer.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_buff<span style="color:#f92672">.</span>put(in_data)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>, pyaudio<span style="color:#f92672">.</span>paContinue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generator</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>closed:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Use a blocking get() to ensure there&#39;s at least one chunk of</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># data, and stop iteration if the chunk is None, indicating the</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># end of the audio stream.</span>
+</span></span><span style="display:flex;"><span>            chunk <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_buff<span style="color:#f92672">.</span>get()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> chunk <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>            data <span style="color:#f92672">=</span> [chunk]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Now consume whatever other data&#39;s still buffered.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>                    chunk <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_buff<span style="color:#f92672">.</span>get(block<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> chunk <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>                    data<span style="color:#f92672">.</span>append(chunk)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> queue<span style="color:#f92672">.</span>Empty:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">listen_print_loop</span>(responses):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Iterates through server responses and prints them.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    The responses passed is a generator that will block until a response
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    is provided by the server.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Each response may contain multiple results, and each result may contain
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    multiple alternatives; for details, see https://goo.gl/tjCPAU.  Here we
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    print only the transcription for the top alternative of the top result.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    In this case, responses are provided for interim results as well. If the
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    response is an interim one, print a line feed at the end of it, to allow
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    the next result to overwrite it, until the response is a final one. For the
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    final one, print a newline to preserve the finalized transcription.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    num_chars_printed <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> response <span style="color:#f92672">in</span> responses:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> response<span style="color:#f92672">.</span>results:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># The `results` list is consecutive. For streaming, we only care about</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># the first result being considered, since once it&#39;s `is_final`, it</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># moves on to considering the next utterance.</span>
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>results[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> result<span style="color:#f92672">.</span>alternatives:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Display the transcription of the top alternative.</span>
+</span></span><span style="display:flex;"><span>        transcript <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span>alternatives[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>transcript
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Display interim results, but with a carriage return at the end of the</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># line, so subsequent lines will overwrite them.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If the previous result was longer than this one, we need to print</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># some extra spaces to overwrite the previous result</span>
+</span></span><span style="display:flex;"><span>        overwrite_chars <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">*</span> (num_chars_printed <span style="color:#f92672">-</span> len(transcript))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> result<span style="color:#f92672">.</span>is_final:
+</span></span><span style="display:flex;"><span>            sys<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>write(transcript <span style="color:#f92672">+</span> overwrite_chars <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            sys<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>flush()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            num_chars_printed <span style="color:#f92672">=</span> len(transcript)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            print(transcript <span style="color:#f92672">+</span> overwrite_chars)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Exit recognition if any of the transcribed phrases could be</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># one of our keywords.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> re<span style="color:#f92672">.</span>search(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;\b(exit|quit)\b&#34;</span>, transcript, re<span style="color:#f92672">.</span>I):
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Exiting..&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            num_chars_printed <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># See http://g.co/cloud/speech/docs/languages</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># for a list of supported languages.</span>
+</span></span><span style="display:flex;"><span>    language_code <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-US&#34;</span>  <span style="color:#75715e"># a BCP-47 language tag</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    client <span style="color:#f92672">=</span> speech<span style="color:#f92672">.</span>SpeechClient()
+</span></span><span style="display:flex;"><span>    config <span style="color:#f92672">=</span> speech<span style="color:#f92672">.</span>RecognitionConfig(
+</span></span><span style="display:flex;"><span>        encoding<span style="color:#f92672">=</span>speech<span style="color:#f92672">.</span>RecognitionConfig<span style="color:#f92672">.</span>AudioEncoding<span style="color:#f92672">.</span>LINEAR16,
+</span></span><span style="display:flex;"><span>        sample_rate_hertz<span style="color:#f92672">=</span>RATE,
+</span></span><span style="display:flex;"><span>        language_code<span style="color:#f92672">=</span>language_code,
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    streaming_config <span style="color:#f92672">=</span> speech<span style="color:#f92672">.</span>StreamingRecognitionConfig(
+</span></span><span style="display:flex;"><span>        config<span style="color:#f92672">=</span>config, interim_results<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> MicrophoneStream(RATE, CHUNK) <span style="color:#66d9ef">as</span> stream:
+</span></span><span style="display:flex;"><span>        audio_generator <span style="color:#f92672">=</span> stream<span style="color:#f92672">.</span>generator()
+</span></span><span style="display:flex;"><span>        requests <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>            speech<span style="color:#f92672">.</span>StreamingRecognizeRequest(audio_content<span style="color:#f92672">=</span>content)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> content <span style="color:#f92672">in</span> audio_generator
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        responses <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>streaming_recognize(streaming_config, requests)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Now, put the transcription responses to use.</span>
+</span></span><span style="display:flex;"><span>        listen_print_loop(responses)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># [END speech_transcribe_streaming_mic]</span>
+</span></span></code></pre></div><ol start="6">
+<li>Create a virtualenv</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python -m venv venv
+</span></span><span style="display:flex;"><span>source venv/bin/activate
+</span></span></code></pre></div><p><a href="https://github.com/googleapis/python-speech/blob/HEAD/samples/microphone/transcribe_streaming_mic.py"
+   title="https://github.com/googleapis/python-speech/blob/HEAD/samples/microphone/transcribe_streaming_mic.py" 
+   target="_blank" rel="nofollow noopener">
+  https://github.com/googleapis/python-speech/blob/HEAD/samples/microphone/transcribe_streaming_mic.py</a></p>
+<ol start="7">
+<li>Check that the port audio is in a directory similar to</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>opt/homebrew/Cellar/portaudio/19.7.0/
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>/usr/local/Cellar/portaudio/19.7.0
+</span></span></code></pre></div><ol start="8">
+<li>build this command line with your path to portaudio and execute it</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python -m pip install --global-option<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;build_ext&#39;</span> --global-option<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-I/usr/local/Cellar/portaudio/19.7.0/include&#39;</span> --global-option<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-L/usr/local/Cellar/portaudio/19.7.0/lib&#39;</span> pyaudio
+</span></span></code></pre></div><ol start="9">
+<li>Install cloud stt</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python -m pip install --upgrade google-cloud-speech
+</span></span></code></pre></div><ol start="10">
+<li>execute</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> python transcribe_streaming_mic.py
+</span></span></code></pre></div></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 03 Apr 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                                             
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+              
+                                    
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+                         
+              
+              
+                                
+                                
+              
+                                    
+              
+                                    
+              
+                                    
+              
+                                      
+                  
+                     
+              
+              
+                                    
+              
+                                      
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/gcloud/stt/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Speech To Text</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/gcloud/stt/sttcurltest/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">VSCode connected to Cloud Shell</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+
+  </body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>
