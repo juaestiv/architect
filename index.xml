@@ -166,6 +166,19 @@ Value: ccccc 4. body (check graphql)</description>
     </item>
     
     <item>
+      <title>React Fast Start 101 </title>
+      <link>https://architect.proyectoomega.es/react/faststart/reactfaststart101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/react/faststart/reactfaststart101/</guid>
+      <description>New app structure Create a directory with the name of the project and inside we will have front and backend
+mkdir nameproject cd nameproject mkdir backend npx create-react-app front --template typescript SRC Structure Under src
+ components folder screen folders  install ES7 REact Redux plugin vscode
+## Components
+ rafce to create component .container to create a div with cassname container  props to components send with spread operator</description>
+    </item>
+    
+    <item>
       <title>Terraform  GCP Cloud Functions</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>

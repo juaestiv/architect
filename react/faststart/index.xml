@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React Fast Start on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/react/faststart/</link>
+    <description>Recent content in React Fast Start on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/react/faststart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Fast Start 101 </title>
+      <link>https://architect.proyectoomega.es/react/faststart/reactfaststart101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/react/faststart/reactfaststart101/</guid>
+      <description>New app structure Create a directory with the name of the project and inside we will have front and backend
+mkdir nameproject cd nameproject mkdir backend npx create-react-app front --template typescript SRC Structure Under src
+ components folder screen folders  install ES7 REact Redux plugin vscode
+## Components
+ rafce to create component .container to create a div with cassname container  props to components send with spread operator</description>
+    </item>
+    
+  </channel>
+</rss>
