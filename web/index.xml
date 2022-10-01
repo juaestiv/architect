@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/web/</link>
+    <description>Recent content in Web on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:16:01 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Websockets </title>
+      <link>https://architect.proyectoomega.es/web/websockets/websockets101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/web/websockets/websockets101/</guid>
+      <description>Creating the socket server. Intro We are going to create an node express server for backend request. This server will have several funcions like serve websocket requests.
+ Folder Structure  The root directory will contain:
+ main node project that will be used for backend backend folder frontend folder (can contain their own node_modules folder for example if using react)  Install express package.  npm i express Install dotenv Instead of reading the variables from the OS operating system we will read them from a hidden file called .</description>
+    </item>
+    
+  </channel>
+</rss>

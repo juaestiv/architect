@@ -174,8 +174,8 @@ Value: ccccc 4. body (check graphql)</description>
       <description>New app structure Create a directory with the name of the project and inside we will have front and backend
 mkdir nameproject cd nameproject mkdir backend npx create-react-app front --template typescript SRC Structure Under src
  components folder screen folders  install ES7 REact Redux plugin vscode
-## Components
- rafce to create component .container to create a div with cassname container  props to components send with spread operator</description>
+Components  rafce to create component .container to create a div with cassname container  props to components send with spread operator
+function App() {  interface IProps {  name:string,  age?</description>
     </item>
     
     <item>
@@ -275,6 +275,17 @@ Configure your cloudshell  Git Terraform Brew  How to access from your local VS 
       
       <guid>https://architect.proyectoomega.es/gcloud/stt/sttcurltest/</guid>
       <description>STT Curl text  export credentials  export GOOGLE_APPLICATION_CREDENTIALS=fichero_credentials.json Create a json file  {  &amp;#34;config&amp;#34;: {  &amp;#34;encoding&amp;#34;:&amp;#34;FLAC&amp;#34;,  &amp;#34;sampleRateHertz&amp;#34;: 16000,  &amp;#34;languageCode&amp;#34;: &amp;#34;en-US&amp;#34;,  &amp;#34;enableWordTimeOffsets&amp;#34;: false  },  &amp;#34;audio&amp;#34;: {  &amp;#34;uri&amp;#34;:&amp;#34;gs://cloud-samples-tests/speech/brooklyn.flac&amp;#34;  }  } execjute the curl  curl -s -H &amp;#34;Content-Type: application/json&amp;#34; \  -H &amp;#34;Authorization: Bearer &amp;#34;$(gcloud auth application-default print-access-token) \  https://speech.googleapis.com/v1/speech:recognize \  -d @sync-request.json You can try in postman with a post request https://speech.</description>
+    </item>
+    
+    <item>
+      <title>Websockets </title>
+      <link>https://architect.proyectoomega.es/web/websockets/websockets101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/web/websockets/websockets101/</guid>
+      <description>Creating the socket server. Intro We are going to create an node express server for backend request. This server will have several funcions like serve websocket requests.
+ Folder Structure  The root directory will contain:
+ main node project that will be used for backend backend folder frontend folder (can contain their own node_modules folder for example if using react)  Install express package.  npm i express Install dotenv Instead of reading the variables from the OS operating system we will read them from a hidden file called .</description>
     </item>
     
   </channel>

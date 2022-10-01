@@ -17,8 +17,8 @@
       <description>New app structure Create a directory with the name of the project and inside we will have front and backend
 mkdir nameproject cd nameproject mkdir backend npx create-react-app front --template typescript SRC Structure Under src
  components folder screen folders  install ES7 REact Redux plugin vscode
-## Components
- rafce to create component .container to create a div with cassname container  props to components send with spread operator</description>
+Components  rafce to create component .container to create a div with cassname container  props to components send with spread operator
+function App() {  interface IProps {  name:string,  age?</description>
     </item>
     
   </channel>
