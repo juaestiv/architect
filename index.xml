@@ -157,6 +157,19 @@ Value: ccccc 4. body (check graphql)</description>
     </item>
     
     <item>
+      <title>gCloud Usefull commadns</title>
+      <link>https://architect.proyectoomega.es/gcloud/cli/gcloudsnippetcommands/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/cli/gcloudsnippetcommands/</guid>
+      <description>Some usefull commands gcloud organizations list This returns name and id:
+DISPLAY_NAME ID DIRECTORY_CUSTOMER_ID your-org 555555555 ndo9dno3 List the folders
+gcloud resource-manager folders list --organization 555555555 To list a subfolder of a folder
+gcloud resource-manager folders list --folder=555555555 json format gcloud resource-manager folders list --folder=555555555 --format=json extract value
+gcloud resource-manager folders list --folder=555555555 --format=json | grep name | awk -F&amp;#39; &amp;#39; &amp;#39;{print $2}&amp;#39; | awk -F&amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $2}&amp;#39; folders/555555555 another way to get only the id</description>
+    </item>
+    
+    <item>
       <title>Python Sample for Mic Realtime transcription</title>
       <link>https://architect.proyectoomega.es/gcloud/stt/pythonmictest/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -286,6 +299,18 @@ Configure your cloudshell  Git Terraform Brew  How to access from your local VS 
       <description>Creating the socket server. Intro We are going to create an node express server for backend request. This server will have several funcions like serve websocket requests.
  Folder Structure  The root directory will contain:
  main node project that will be used for backend backend folder frontend folder (can contain their own node_modules folder for example if using react)  Install express package.  npm i express Install dotenv Instead of reading the variables from the OS operating system we will read them from a hidden file called .</description>
+    </item>
+    
+    <item>
+      <title>Websockets Host in GCP</title>
+      <link>https://architect.proyectoomega.es/web/websockets/websocketshostgcp/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/web/websockets/websocketshostgcp/</guid>
+      <description>Intro This repo explains how to create a websocket server using cloud run.
+Create the server with this code.  Init npm  npm init npm i express Scripts in package.json
+ &amp;#34;scripts&amp;#34;: {  &amp;#34;start&amp;#34;: &amp;#34;node index&amp;#34;  }, index.js
+const express = require(&amp;#39;express&amp;#39;); const app = express(); const http = require(&amp;#39;http&amp;#39;).Server(app); const io = require(&amp;#39;socket.io&amp;#39;)(http); const port = process.env.PORT || 3000;  app.use(express.static(__dirname + &amp;#39;/public&amp;#39;));  io.on(&amp;#34;connection&amp;#34;, (socket) =&amp;gt; {  console.</description>
     </item>
     
   </channel>

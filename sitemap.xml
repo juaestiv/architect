@@ -102,6 +102,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/gcloud/cli/gcloudsnippetcommands/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/gcloud/stt/pythonmictest/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,6 +173,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/web/websockets/websockets101/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/web/websockets/websocketshostgcp/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

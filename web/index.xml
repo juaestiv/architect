@@ -19,5 +19,17 @@
  main node project that will be used for backend backend folder frontend folder (can contain their own node_modules folder for example if using react)  Install express package.  npm i express Install dotenv Instead of reading the variables from the OS operating system we will read them from a hidden file called .</description>
     </item>
     
+    <item>
+      <title>Websockets Host in GCP</title>
+      <link>https://architect.proyectoomega.es/web/websockets/websocketshostgcp/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/web/websockets/websocketshostgcp/</guid>
+      <description>Intro This repo explains how to create a websocket server using cloud run.
+Create the server with this code.  Init npm  npm init npm i express Scripts in package.json
+ &amp;#34;scripts&amp;#34;: {  &amp;#34;start&amp;#34;: &amp;#34;node index&amp;#34;  }, index.js
+const express = require(&amp;#39;express&amp;#39;); const app = express(); const http = require(&amp;#39;http&amp;#39;).Server(app); const io = require(&amp;#39;socket.io&amp;#39;)(http); const port = process.env.PORT || 3000;  app.use(express.static(__dirname + &amp;#39;/public&amp;#39;));  io.on(&amp;#34;connection&amp;#34;, (socket) =&amp;gt; {  console.</description>
+    </item>
+    
   </channel>
 </rss>
