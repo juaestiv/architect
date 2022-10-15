@@ -631,6 +631,59 @@ Then the ngoninit can setup the setting</p>
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="build-and-serve-the-app">build and serve the app</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> ng build --localize  
+</span></span><span style="display:flex;"><span> serve dist/101-angular-localize  
+</span></span></code></pre></div><h1 id="full-sample-header">full sample header</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span>, <span style="color:#a6e22e">LOCALE_ID</span>, <span style="color:#a6e22e">Inject</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@Component</span>({
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-header&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./header.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./header.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HeaderComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">siteLanguage</span>: <span style="color:#66d9ef">any</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Español&#39;</span>;
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">siteLocale</span>: <span style="color:#66d9ef">string</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;es-ES&#39;</span>;
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">languageList</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>   { <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;en-US&#39;</span>, <span style="color:#a6e22e">label</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;English&#39;</span> },
+</span></span><span style="display:flex;"><span>   { <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es-ES&#39;</span>, <span style="color:#a6e22e">label</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Español&#39;</span> },
+</span></span><span style="display:flex;"><span> ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">@Inject</span>(<span style="color:#a6e22e">LOCALE_ID</span>) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">locale</span>: <span style="color:#66d9ef">string</span>) { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">locale</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">currentLocale</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">languageList</span>.<span style="color:#a6e22e">find</span>(<span style="color:#a6e22e">element</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">code</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">locale</span>);
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">siteLanguage</span><span style="color:#f92672">=</span><span style="color:#a6e22e">currentLocale</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">label</span>
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">mat-toolbar</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;primary&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-icon-button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example-icon&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Example icon-button with menu icon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">mat-icon</span>&gt;menu&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">span</span>&gt;My App&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example-spacer&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-icon-button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example-icon favorite-icon&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Example icon-button with heart icon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">mat-icon</span>&gt;favorite&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-icon-button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example-icon&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Example icon-button with share icon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">mat-icon</span>&gt;share&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ng-container</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">mat-icon</span>&gt;language&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-button</span>  <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">matMenuTriggerFor</span><span style="color:#960050;background-color:#1e0010">]=&#34;</span><span style="color:#a6e22e">anyname</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;{{siteLanguage}}&lt;<span style="color:#f92672">mat-icon</span>&gt;arrow_drop_down&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">mat-menu</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">anyname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;matMenu&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/en-US&#34;</span>&gt;English&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/es-ES&#34;</span>&gt;Spanish&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">mat-menu</span>&gt;
+</span></span><span style="display:flex;"><span>     &lt;/<span style="color:#f92672">ng-container</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">mat-toolbar</span>&gt;
 </span></span></code></pre></div></div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">
