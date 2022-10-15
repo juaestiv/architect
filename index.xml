@@ -9,6 +9,18 @@
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Sun, 09 Oct 2022 08:16:01 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Angular Localize and Switcher</title>
+      <link>https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/</guid>
+      <description>https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496
+download https://poedit.net/ https://dev.to/batbrain9392/internationalization-with-angular-v10-693
+https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085
+Create the app  Create an application with routing Common steps   material configure routes Home Screen First component router outlet  ng new 101-angular-localize --style scss --routing true ng add @angular/material ng g c screens/HomeScreen ng g c components/Header ng g c components/sample-component sudo npm -g i serve import { HomeScreenComponent } from &amp;#39;./screens/home-screen/home-screen.component&amp;#39;  const routes: Routes = [  { path: &amp;#39;home-screen&amp;#39;, component: HomeScreenComponent },  { path: &amp;#39;&amp;#39;, redirectTo: &amp;#39;/home-screen&amp;#39;, pathMatch: &amp;#39;full&amp;#39; } ]; Install and setup the localize package  Install  ng add @angular/localize Edit the angular .</description>
+    </item>
+    
+    <item>
       <title>Angular Pokemon</title>
       <link>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</link>
       <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>

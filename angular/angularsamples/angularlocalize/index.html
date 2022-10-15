@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+
+
+
+<link rel="canonical" href="https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/" />
+
+
+  <meta charset="utf-8" />
+  <title>Angular Localize and Switcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Angular Localize and Switcher - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, angular,, google, cloud, platform,, gcp,, remote, development,, juan, antonio, estival">
+ 
+  
+  
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Angular Localize and Switcher" />
+  <meta
+    name="twitter:description"
+    content="https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496
+download https://poedit.net/ https://dev.to/batbrain9392/internationalization-with-angular-v10-693
+https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085
+Create the app  Create an application with routing Common steps   material configure routes Home Screen First component router outlet  ng new 101-angular-localize --style scss --routing true ng add @angular/material ng g c screens/HomeScreen ng g c components/Header ng g c components/sample-component sudo npm -g i serve import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;  const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent },  { path: &#39;&#39;, redirectTo: &#39;/home-screen&#39;, pathMatch: &#39;full&#39; } ]; Install and setup the localize package  Install  ng add @angular/localize Edit the angular ."
+  />
+    <meta property="og:title" content="Angular Localize and Switcher" />
+<meta property="og:description" content="https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496
+download https://poedit.net/ https://dev.to/batbrain9392/internationalization-with-angular-v10-693
+https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085
+Create the app  Create an application with routing Common steps   material configure routes Home Screen First component router outlet  ng new 101-angular-localize --style scss --routing true ng add @angular/material ng g c screens/HomeScreen ng g c components/Header ng g c components/sample-component sudo npm -g i serve import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;  const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent },  { path: &#39;&#39;, redirectTo: &#39;/home-screen&#39;, pathMatch: &#39;full&#39; } ]; Install and setup the localize package  Install  ng add @angular/localize Edit the angular ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/" /><meta property="article:section" content="angular" />
+<meta property="article:published_time" content="2022-10-09T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-10-09T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Angular Localize and Switcher"/>
+<meta name="twitter:description" content="https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496
+download https://poedit.net/ https://dev.to/batbrain9392/internationalization-with-angular-v10-693
+https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085
+Create the app  Create an application with routing Common steps   material configure routes Home Screen First component router outlet  ng new 101-angular-localize --style scss --routing true ng add @angular/material ng g c screens/HomeScreen ng g c components/Header ng g c components/sample-component sudo npm -g i serve import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;  const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent },  { path: &#39;&#39;, redirectTo: &#39;/home-screen&#39;, pathMatch: &#39;full&#39; } ]; Install and setup the localize package  Install  ng add @angular/localize Edit the angular ."/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                     
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/"
+  title="Angular"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/">
+    Angular
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/"
+  title="Angular for Dialogflow"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/">
+    Angular for Dialogflow
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/"
+  title="Angular calling DF API using express"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/">
+    Angular calling DF API using express
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/"
+  title="Angular Website Base for DF Projects"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/">
+    Angular Website Base for DF Projects
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularsamples/"
+  title="Angular Samples"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularsamples/">
+    Angular Samples
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/"
+  title="Angular Localize and Switcher"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/angular/angularsamples/angularlocalize/">
+    Angular Localize and Switcher
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/"
+  title="Angular Pokemon"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/">
+    Angular Pokemon
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/"
+  title="Angular Skeleton"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/">
+    Angular Skeleton
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/"
+  title="Angular Navbar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/">
+    Angular Navbar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/"
+  title="Angular new project"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/">
+    Angular new project
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/"
+  title="Angular Responsive Layout"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/">
+    Angular Responsive Layout
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/"
+  title="Angular Sidebar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/">
+    Angular Sidebar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/"
+  title="Typescript Types"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/">
+    Typescript Types
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+                          
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Angular Localize and Switcher</h2>
+          
+          <div class="content"><p><a href="https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496"
+   title="https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496" 
+   target="_blank" rel="nofollow noopener">
+  https://javascript.plainenglish.io/angular-translating-the-application-language-using-angular-localize-and-deploying-it-to-firebase-d2b127e64496</a></p>
+<p>download <a href="https://poedit.net/"
+   title="https://poedit.net/" 
+   target="_blank" rel="nofollow noopener">
+  https://poedit.net/</a>
+<a href="https://dev.to/batbrain9392/internationalization-with-angular-v10-693"
+   title="https://dev.to/batbrain9392/internationalization-with-angular-v10-693" 
+   target="_blank" rel="nofollow noopener">
+  https://dev.to/batbrain9392/internationalization-with-angular-v10-693</a></p>
+<p><a href="https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085"
+   title="https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085" 
+   target="_blank" rel="nofollow noopener">
+  https://medium.com/dailyjs/maintaining-multi-language-angular-applications-26b74df8d085</a></p>
+<h1 id="create-the-app">Create the app</h1>
+<ol>
+<li>Create an application with routing</li>
+<li>Common steps</li>
+</ol>
+<ul>
+<li>material</li>
+<li>configure routes</li>
+<li>Home Screen</li>
+<li>First component</li>
+<li>router outlet</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng new 101-angular-localize --style scss --routing true
+</span></span><span style="display:flex;"><span>ng add @angular/material
+</span></span><span style="display:flex;"><span>ng g c screens/HomeScreen
+</span></span><span style="display:flex;"><span>ng g c components/Header
+</span></span><span style="display:flex;"><span>ng g c components/sample-component
+</span></span><span style="display:flex;"><span>sudo npm -g i serve
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">HomeScreenComponent</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./screens/home-screen/home-screen.component&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">routes</span>: <span style="color:#66d9ef">Routes</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;home-screen&#39;</span>, <span style="color:#a6e22e">component</span>: <span style="color:#66d9ef">HomeScreenComponent</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,   <span style="color:#a6e22e">redirectTo</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/home-screen&#39;</span>, <span style="color:#a6e22e">pathMatch</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;full&#39;</span> }
+</span></span><span style="display:flex;"><span>];
+</span></span></code></pre></div><h1 id="install-and-setup-the-localize-package">Install and setup the localize package</h1>
+<ol>
+<li>Install</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng add @angular/localize
+</span></span></code></pre></div><ol start="2">
+<li>Edit the angular .json
+When working in a typical project the angular.json chain will be:</li>
+</ol>
+<p>-&gt; root (the first open bracket)-&gt;projects-&gt;(name of the project)</p>
+<p>Just below the name of the project. (at the <strong>same level</strong> than <strong>project type</strong> or <strong>schematics</strong>)</p>
+<p>We will need:</p>
+<ul>
+<li>
+<p>the locale in which source code is written (sourceLocale). We will use always english to write the source code.</p>
+</li>
+<li>
+<p>the locales to be tranlated and where the translation file is:
+Note: you can choose json or xliff. Xliff has the advnagege that witn online editor you can translate easily
+<a href="http://xliff.brightec.co.uk/index.php"
+   title="http://xliff.brightec.co.uk/index.php" 
+   target="_blank" rel="nofollow noopener">
+  http://xliff.brightec.co.uk/index.php</a>
+<a href="https://poeditor.com/"
+   title="https://poeditor.com/" 
+   target="_blank" rel="nofollow noopener">
+  https://poeditor.com/</a></p>
+</li>
+<li>
+<p>Now we will write the options. -&gt;root (the first open bracket )-&gt;projects-&gt;(name of the project)-&gt;architect-&gt; build -&gt; options -&gt;</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;projects&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;101-angular-internacinalization&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;i18n&#34;</span>:{
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sourceLocale&#34;</span>:<span style="color:#e6db74">&#34;en-US&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;locales&#34;</span>: {<span style="color:#f92672">&#34;es-ES&#34;</span>:<span style="color:#e6db74">&#34;src/locale/messages.es.xlf&#34;</span>}
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;architect&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;build&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;builder&#34;</span>: <span style="color:#e6db74">&#34;@angular-devkit/build-angular:browser&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;options&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;localize&#34;</span>:[<span style="color:#e6db74">&#34;es-ES&#34;</span>],
+</span></span></code></pre></div><p>Take into account that ng serve &ldquo;naked&rdquo; will fail now.</p>
+<ol start="3">
+<li>Prepare components
+Edit templates</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">i18n</span>&gt;for test sample-component works!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">i18n</span>&gt; for dates like {{&#34;05/01/2022&#34; | date}} use pipe&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">i18n</span>&gt; for currencies like {{129 | currency}} use pipe&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">i18n</span>&gt; for test of images&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;just me&#34;</span> <span style="color:#a6e22e">i18n-alt</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../assets/yo.jpeg&#34;</span>&gt;
+</span></span></code></pre></div><p>edit code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Title</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/platform-browser&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@Component</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-sample-component&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./sample-component.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./sample-component.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SampleComponentComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;your title&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">titleService</span>:<span style="color:#66d9ef">Title</span>) { 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">titleService</span>.<span style="color:#a6e22e">setTitle</span>(<span style="color:#a6e22e">$localize</span><span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="4">
+<li>Extract</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng extract-i18n --output-path src/locale
+</span></span></code></pre></div><p>the folder locale is created
+in json</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng extract-i18n --output-path src/locale --format json
+</span></span></code></pre></div><p>In json we will see a file like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;locale&#34;</span>: <span style="color:#e6db74">&#34;en-US&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;translations&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;8286437328803353698&#34;</span>: <span style="color:#e6db74">&#34;for test sample-component works!&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;1586441093982144361&#34;</span>: <span style="color:#e6db74">&#34; for dates like {$INTERPOLATION} use pipe&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;8230667035758312692&#34;</span>: <span style="color:#e6db74">&#34; for currencies like {$INTERPOLATION} use pipe&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;3271070469815256851&#34;</span>: <span style="color:#e6db74">&#34; for test of images&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;4323851768315885124&#34;</span>: <span style="color:#e6db74">&#34;just me&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;1737753151350322492&#34;</span>: <span style="color:#e6db74">&#34;{$PH}&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="5">
+<li>translate
+Just create a copy and name it with the lang proper extension. Remeber the file name of the angular.json</li>
+</ol>
+<p>Now ng serve will serve only the localized version (es)</p>
+<p>Build the app</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng build --localize  
+</span></span></code></pre></div><p>and serve it with a local server</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>serve dist/101-angular-internacinalization
+</span></span></code></pre></div><p>Now you can call both url
+http://localhost:3000/en-US/home
+http://localhost:3000/es-ES/home</p>
+<h1 id="inject-a-switcher">Inject a switcher</h1>
+<p>To setup a swither to set the language we will need to play with href to inject the locale into the route.
+The menu to show the langs will inject ther locale like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">mat-menu</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">anyname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;matMenu&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/en-US&#34;</span>&gt;English&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/es-ES&#34;</span>&gt;Spanish&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">mat-menu</span>&gt;
+</span></span></code></pre></div><p>We now the the while menu in angular will have a trigger in a button for example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ng-container</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">mat-icon</span>&gt;language&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-button</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">matMenuTriggerFor</span><span style="color:#960050;background-color:#1e0010">]=&#34;</span><span style="color:#a6e22e">anyname</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        {{siteLanguage}}
+</span></span><span style="display:flex;"><span>         &lt;<span style="color:#f92672">mat-icon</span>&gt;arrow_drop_down&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">mat-menu</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">anyname</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;matMenu&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/en-US&#34;</span>&gt;English&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">mat-menu-item</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/es-ES&#34;</span>&gt;Spanish&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">mat-menu</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;/<span style="color:#f92672">ng-container</span>&gt;
+</span></span></code></pre></div><p>Only with the change of href will work even if there is no additional code on the component class.
+However we will want to show current language.
+We can init a variable like siteLanguage with the default langutew
+We can create an array with the options like languageList
+The current locale can be inyected with LOCALE_ID, Inject in an import clause and in the constructor.
+Then the ngoninit can setup the setting</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">ThisReceiver</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/compiler&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span>, <span style="color:#a6e22e">LOCALE_ID</span>, <span style="color:#a6e22e">Inject</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@Component</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-home-screen&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./home-screen.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./home-screen.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeScreenComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">siteLanguage</span>: <span style="color:#66d9ef">any</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Español&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">languageList</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    { <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;en-US&#39;</span>, <span style="color:#a6e22e">label</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;English&#39;</span> },
+</span></span><span style="display:flex;"><span>    { <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;es-ES&#39;</span>, <span style="color:#a6e22e">label</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Español&#39;</span> },
+</span></span><span style="display:flex;"><span>  ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">@Inject</span>(<span style="color:#a6e22e">LOCALE_ID</span>) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">locale</span>: <span style="color:#66d9ef">string</span>) { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">locale</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">currentLocale</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">languageList</span>.<span style="color:#a6e22e">find</span>(<span style="color:#a6e22e">element</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">element</span>.<span style="color:#a6e22e">code</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">locale</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">siteLanguage</span><span style="color:#f92672">=</span><span style="color:#a6e22e">currentLocale</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">label</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 09 Oct 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                                   
+                                
+                         
+              
+                                      
+                  
+                     
+              
+                                    
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+              
+                                    
+              
+                                    
+                         
+                         
+              
+                                    
+              
+                                    
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+              
+                                    
+                         
+              
+              
+                                                 
+              
+              
+                                                 
+              
+              
+                                    
+                         
+              
+                                    
+              
+                                      
+              
+                                      
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/angular/angularsamples/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Angular Samples</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">Angular Pokemon</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+
+  </body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>
