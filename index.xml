@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Proyecto Omega</copyright>
-    <lastBuildDate>Sun, 10 Jul 2022 11:20:26 +0100</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 08:16:01 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular Pokemon</title>
+      <link>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</guid>
+      <description>Pokemon https://pokeapi.co/ https://pokeapi.co/docs/v2
+https://pokeapi.co/api/v2//{id or name}
+Endpoints:
+ items Berries Locations, etc  Posibles Ampliaciones Búsqueda por imagen
+ price evolution  App Creation
+ng new poke-app --style=scss --routing=false Packages
+ng add @angular/material --theme=indigo-pink --typography=true --animations=true This should add some entries to index.html
+ &amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;amp;display=swap&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  &amp;lt;link href=&amp;#34;https://fonts.googleapis.com/icon?family=Material+Icons&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; and the sytles.css
+/* You can add global styles to this file, and also import other style files */  html, body { height: 100%; } body { margin: 0; font-family: Roboto, &amp;#34;Helvetica Neue&amp;#34;, sans-serif; } the app.</description>
+    </item>
+    
+    <item>
+      <title>gCloud compute</title>
+      <link>https://architect.proyectoomega.es/gcloud/cli/gcloudcomputecli/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/cli/gcloudcomputecli/</guid>
+      <description>Compute CLI Create https://cloud.google.com/sdk/gcloud/reference/compute/instances/create
+gcloud compute instances create asterisks \  --project=hospitality-demo-361210 \  --subnet=reds \  --image=centos-7-v20200420 \  --image-project centos-cloud \  --zone europe-southwest1-a \  --image-project=centos-cloud \  --boot-disk-size=40GB \  --boot-disk-type=pd-standard \  --boot-disk-device-name=instance-1 \  --shielded-secure-boot \  --no-address \  --machine-type n2-standard-2 </description>
+    </item>
+    
     <item>
       <title>Creación del proyecto en Cloud Shell</title>
       <link>https://architect.proyectoomega.es/staticsites/nuevositecloud/creationincloudshell/</link>
@@ -82,6 +109,16 @@ brew --version Install Terraform brew tap hashicorp/tap brew install hashicorp/t
     </item>
     
     <item>
+      <title>Angular calling DF API using express</title>
+      <link>https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/</guid>
+      <description>Call to express server API to invoke DF detectIntent https://expressjs.com/en/resources/middleware/cors.html
+ Create an interface that will be used to recive the body in json of the request  export interface DFRequest {  queryText:string,  languageCode:string,  sessionId:string  } the service will use the interface type to receive the request mi interpretacion. la función devuelve un observable DEntro de ese observable irá la respuesta de la api que de momento es de tipo any  import { Injectable, OnInit } from &amp;#39;@angular/core&amp;#39;; import { HttpClient, HttpParams } from &amp;#39;@angular/common/http&amp;#39;; import { Observable } from &amp;#39;rxjs&amp;#39;; import { environment } from &amp;#39;.</description>
+    </item>
+    
+    <item>
       <title>Angular Navbar</title>
       <link>https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -126,6 +163,16 @@ import { FlexLayoutModule } from &amp;#39;@angular/flex-layout&amp;#39;; ...  @N
     </item>
     
     <item>
+      <title>Angular Website Base for DF Projects</title>
+      <link>https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/</guid>
+      <description>Base Angular app Resources https://www.youtube.com/watch?v=dFN79tEr_bc https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36 https://www.npmjs.com/package/google-oauth-jwt https://www.npmjs.com/package/@google-cloud/dialogflow-cx https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js
+ Create angular app  new df-101-app --style=scss --routing=true Add Material dependendies. We will use routing  ng add @angular/material --theme indigo-pink --typography true --animations true Add the HomeScreen  ng g c screens/HomeScreen Edit app-routing module with a route to home screen  import { HomeScreenComponent } from &amp;#39;./screens/home-screen/home-screen.component&amp;#39;; const routes: Routes = [  { path: &amp;#39;home-screen&amp;#39;, component: HomeScreenComponent }, ]; Install http server.</description>
+    </item>
+    
+    <item>
       <title>Appsync Mock</title>
       <link>https://architect.proyectoomega.es/api/graphql/appsyncmock/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -145,6 +192,15 @@ Value: ccccc 4. body (check graphql)</description>
       
       <guid>https://architect.proyectoomega.es/blogcategory/subject/appsyncmock/</guid>
       <description>Appsync </description>
+    </item>
+    
+    <item>
+      <title>Dialogflow Event with Params</title>
+      <link>https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/</guid>
+      <description>Event {  &amp;#34;detectIntentResponseId&amp;#34;: &amp;#34;423fa989-651c-410d-9049-11b7890a6200&amp;#34;,  &amp;#34;pageInfo&amp;#34;: {  &amp;#34;currentPage&amp;#34;: &amp;#34;projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/flows/00000000-0000-0000-0000-000000000000/pages/6935c97f-ff7c-4886-9603-292eef406039&amp;#34;,  &amp;#34;displayName&amp;#34;: &amp;#34;Confirm&amp;#34;  },  &amp;#34;sessionInfo&amp;#34;: {  &amp;#34;session&amp;#34;: &amp;#34;projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/sessions/26926c-a2f-cc0-729-896ed5fc1&amp;#34;,  &amp;#34;parameters&amp;#34;: { &amp;#34;product&amp;#34;: &amp;#34;nest&amp;#34;, &amp;#34;quantity&amp;#34;: 2.0 }  },  &amp;#34;fulfillmentInfo&amp;#34;: { &amp;#34;tag&amp;#34;: &amp;#34;purchase&amp;#34; },  &amp;#34;messages&amp;#34;: [  {  &amp;#34;text&amp;#34;: {  &amp;#34;text&amp;#34;: [&amp;#34;you have ordered 2 nest&amp;#34;],  &amp;#34;redactedText&amp;#34;: [&amp;#34;you have ordered 2 nest&amp;#34;]  },  &amp;#34;responseType&amp;#34;: &amp;#34;ENTRY_PROMPT&amp;#34;,  &amp;#34;source&amp;#34;: &amp;#34;VIRTUAL_AGENT&amp;#34;  }  ],  &amp;#34;text&amp;#34;: &amp;#34;2&amp;#34;,  &amp;#34;languageCode&amp;#34;: &amp;#34;en&amp;#34; } </description>
     </item>
     
     <item>
@@ -192,6 +248,19 @@ function App() {  interface IProps {  name:string,  age?</description>
     </item>
     
     <item>
+      <title>Terraform  101</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraform101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraform101/</guid>
+      <description>Basics of terraform and the use with gcloud gcloud cli tips gcloud organizations list This returns name and id
+DISPLAY_NAME ID DIRECTORY_CUSTOMER_ID your-org 555555555 ndo9dno3 List the folders
+gcloud resource-manager folders list --organization 555555555 To list a subfolder of a folder
+gcloud resource-manager folders list --folder=555555555 json format gcloud resource-manager folders list --folder=555555555 --format=json extracta vaule
+gcloud resource-manager folders list --folder=555555555 --format=json | grep name | awk -F&amp;#39; &amp;#39; &amp;#39;{print $2}&amp;#39; | awk -F&amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $2}&amp;#39; folders/555555555 another way to get only the id</description>
+    </item>
+    
+    <item>
       <title>Terraform  GCP Cloud Functions</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -235,9 +304,9 @@ gcloud auth application-default login </description>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
       
       <guid>https://architect.proyectoomega.es/iac/terraform/terraformmodules/</guid>
-      <description>Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
- VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
-The idea is that it will be a variable that will replace the CIDR blocks acording the environment.</description>
+      <description>Intro new
+ create a modules folder and inside folder with a descriptive name of the module the main folder and the desireded module folder should have a main.ft  old The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.</description>
     </item>
     
     <item>

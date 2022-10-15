@@ -9,6 +9,16 @@
     <copyright>Proyecto Omega</copyright>
     <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/gcloud/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>gCloud compute</title>
+      <link>https://architect.proyectoomega.es/gcloud/cli/gcloudcomputecli/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/gcloud/cli/gcloudcomputecli/</guid>
+      <description>Compute CLI Create https://cloud.google.com/sdk/gcloud/reference/compute/instances/create
+gcloud compute instances create asterisks \  --project=hospitality-demo-361210 \  --subnet=reds \  --image=centos-7-v20200420 \  --image-project centos-cloud \  --zone europe-southwest1-a \  --image-project=centos-cloud \  --boot-disk-size=40GB \  --boot-disk-type=pd-standard \  --boot-disk-device-name=instance-1 \  --shielded-secure-boot \  --no-address \  --machine-type n2-standard-2 </description>
+    </item>
+    
+    <item>
       <title>gCloud Basic Commands</title>
       <link>https://architect.proyectoomega.es/gcloud/cli/gcloud101/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>

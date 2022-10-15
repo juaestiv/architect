@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dialogflow Events on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/dialogflow/dfsampleevents/</link>
+    <description>Recent content in Dialogflow Events on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/dialogflow/dfsampleevents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dialogflow Event with Params</title>
+      <link>https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/</guid>
+      <description>Event {  &amp;#34;detectIntentResponseId&amp;#34;: &amp;#34;423fa989-651c-410d-9049-11b7890a6200&amp;#34;,  &amp;#34;pageInfo&amp;#34;: {  &amp;#34;currentPage&amp;#34;: &amp;#34;projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/flows/00000000-0000-0000-0000-000000000000/pages/6935c97f-ff7c-4886-9603-292eef406039&amp;#34;,  &amp;#34;displayName&amp;#34;: &amp;#34;Confirm&amp;#34;  },  &amp;#34;sessionInfo&amp;#34;: {  &amp;#34;session&amp;#34;: &amp;#34;projects/cepf-l300-juananestival/locations/global/agents/72eac020-a0bb-469c-93f4-dd0df3082047/sessions/26926c-a2f-cc0-729-896ed5fc1&amp;#34;,  &amp;#34;parameters&amp;#34;: { &amp;#34;product&amp;#34;: &amp;#34;nest&amp;#34;, &amp;#34;quantity&amp;#34;: 2.0 }  },  &amp;#34;fulfillmentInfo&amp;#34;: { &amp;#34;tag&amp;#34;: &amp;#34;purchase&amp;#34; },  &amp;#34;messages&amp;#34;: [  {  &amp;#34;text&amp;#34;: {  &amp;#34;text&amp;#34;: [&amp;#34;you have ordered 2 nest&amp;#34;],  &amp;#34;redactedText&amp;#34;: [&amp;#34;you have ordered 2 nest&amp;#34;]  },  &amp;#34;responseType&amp;#34;: &amp;#34;ENTRY_PROMPT&amp;#34;,  &amp;#34;source&amp;#34;: &amp;#34;VIRTUAL_AGENT&amp;#34;  }  ],  &amp;#34;text&amp;#34;: &amp;#34;2&amp;#34;,  &amp;#34;languageCode&amp;#34;: &amp;#34;en&amp;#34; } </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular Samples on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/angular/angularsamples/</link>
+    <description>Recent content in Angular Samples on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/angular/angularsamples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular Pokemon</title>
+      <link>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</guid>
+      <description>Pokemon https://pokeapi.co/ https://pokeapi.co/docs/v2
+https://pokeapi.co/api/v2//{id or name}
+Endpoints:
+ items Berries Locations, etc  Posibles Ampliaciones Búsqueda por imagen
+ price evolution  App Creation
+ng new poke-app --style=scss --routing=false Packages
+ng add @angular/material --theme=indigo-pink --typography=true --animations=true This should add some entries to index.html
+ &amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;amp;display=swap&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  &amp;lt;link href=&amp;#34;https://fonts.googleapis.com/icon?family=Material+Icons&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; and the sytles.css
+/* You can add global styles to this file, and also import other style files */  html, body { height: 100%; } body { margin: 0; font-family: Roboto, &amp;#34;Helvetica Neue&amp;#34;, sans-serif; } the app.</description>
+    </item>
+    
+  </channel>
+</rss>

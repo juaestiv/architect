@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+
+
+
+<link rel="canonical" href="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/" />
+
+
+  <meta charset="utf-8" />
+  <title>Angular Website Base for DF Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Angular Website Base for DF Projects - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, angular,, google, cloud, platform,, gcp,, remote, development,, juan, antonio, estival">
+ 
+  
+  
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Angular Website Base for DF Projects" />
+  <meta
+    name="twitter:description"
+    content="Base Angular app Resources https://www.youtube.com/watch?v=dFN79tEr_bc https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36 https://www.npmjs.com/package/google-oauth-jwt https://www.npmjs.com/package/@google-cloud/dialogflow-cx https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js
+ Create angular app  new df-101-app --style=scss --routing=true Add Material dependendies. We will use routing  ng add @angular/material --theme indigo-pink --typography true --animations true Add the HomeScreen  ng g c screens/HomeScreen Edit app-routing module with a route to home screen  import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;; const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent }, ]; Install http server."
+  />
+    <meta property="og:title" content="Angular Website Base for DF Projects" />
+<meta property="og:description" content="Base Angular app Resources https://www.youtube.com/watch?v=dFN79tEr_bc https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36 https://www.npmjs.com/package/google-oauth-jwt https://www.npmjs.com/package/@google-cloud/dialogflow-cx https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js
+ Create angular app  new df-101-app --style=scss --routing=true Add Material dependendies. We will use routing  ng add @angular/material --theme indigo-pink --typography true --animations true Add the HomeScreen  ng g c screens/HomeScreen Edit app-routing module with a route to home screen  import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;; const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent }, ]; Install http server." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/" /><meta property="article:section" content="angular" />
+<meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Angular Website Base for DF Projects"/>
+<meta name="twitter:description" content="Base Angular app Resources https://www.youtube.com/watch?v=dFN79tEr_bc https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36 https://www.npmjs.com/package/google-oauth-jwt https://www.npmjs.com/package/@google-cloud/dialogflow-cx https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js
+ Create angular app  new df-101-app --style=scss --routing=true Add Material dependendies. We will use routing  ng add @angular/material --theme indigo-pink --typography true --animations true Add the HomeScreen  ng g c screens/HomeScreen Edit app-routing module with a route to home screen  import { HomeScreenComponent } from &#39;./screens/home-screen/home-screen.component&#39;; const routes: Routes = [  { path: &#39;home-screen&#39;, component: HomeScreenComponent }, ]; Install http server."/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                     
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/"
+  title="Angular"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/">
+    Angular
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/"
+  title="Angular for Dialogflow"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/">
+    Angular for Dialogflow
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/"
+  title="Angular calling DF API using express"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/">
+    Angular calling DF API using express
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/"
+  title="Angular Website Base for DF Projects"
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/">
+    Angular Website Base for DF Projects
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularsamples/"
+  title="Angular Samples"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularsamples/">
+    Angular Samples
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/"
+  title="Angular Pokemon"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/">
+    Angular Pokemon
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/"
+  title="Angular Skeleton"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/">
+    Angular Skeleton
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/"
+  title="Angular Navbar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnavbar/">
+    Angular Navbar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/"
+  title="Angular new project"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularnewproject/">
+    Angular new project
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/"
+  title="Angular Responsive Layout"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularresponsivelayout/">
+    Angular Responsive Layout
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/"
+  title="Angular Sidebar"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angularsidebar/">
+    Angular Sidebar
+  </a>
+   
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/"
+  title="Typescript Types"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/angular/angularskeleton/angulartypes/">
+    Typescript Types
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+                          
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Angular Website Base for DF Projects</h2>
+          
+          <div class="content"><h1 id="base-angular-app">Base Angular app</h1>
+<p>Resources
+<a href="https://www.youtube.com/watch?v=dFN79tEr_bc"
+   title="https://www.youtube.com/watch?v=dFN79tEr_bc" 
+   target="_blank" rel="nofollow noopener">
+  https://www.youtube.com/watch?v=dFN79tEr_bc</a>
+<a href="https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow"
+   title="https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow" 
+   target="_blank" rel="nofollow noopener">
+  https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow</a>
+<a href="https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36"
+   title="https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36" 
+   target="_blank" rel="nofollow noopener">
+  https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36</a>
+<a href="https://www.npmjs.com/package/google-oauth-jwt"
+   title="https://www.npmjs.com/package/google-oauth-jwt" 
+   target="_blank" rel="nofollow noopener">
+  https://www.npmjs.com/package/google-oauth-jwt</a>
+<a href="https://www.npmjs.com/package/@google-cloud/dialogflow-cx"
+   title="https://www.npmjs.com/package/@google-cloud/dialogflow-cx" 
+   target="_blank" rel="nofollow noopener">
+  https://www.npmjs.com/package/@google-cloud/dialogflow-cx</a>
+<a href="https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js"
+   title="https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js" 
+   target="_blank" rel="nofollow noopener">
+  https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js</a></p>
+<ol>
+<li>Create angular app</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>new df-101-app --style<span style="color:#f92672">=</span>scss --routing<span style="color:#f92672">=</span>true
+</span></span></code></pre></div><ol start="2">
+<li>Add Material dependendies. We will use routing</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng add @angular/material --theme indigo-pink --typography true --animations true
+</span></span></code></pre></div><ol start="3">
+<li>Add the HomeScreen</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng g c screens/HomeScreen
+</span></span></code></pre></div><ol start="4">
+<li>Edit app-routing module with a route to home screen</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">HomeScreenComponent</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./screens/home-screen/home-screen.component&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">routes</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Routes</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;home-screen&#39;</span>, <span style="color:#a6e22e">component</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">HomeScreenComponent</span> },
+</span></span><span style="display:flex;"><span>];
+</span></span></code></pre></div><ol start="5">
+<li>Install http server. It will be usefull for multilanguage testing</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npm install -D http-server
+</span></span></code></pre></div><ol start="6">
+<li>Add Header component</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng generate component components/Header
+</span></span></code></pre></div><ol start="7">
+<li>Edit the app-module to include Buttos, Icons and Toolbar</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatButtonModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/button&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatToolbarModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/toolbar&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatIconModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/icon&#39;</span>;
+</span></span></code></pre></div><ol start="8">
+<li>Add header component template</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">mat-toolbar</span> <span style="color:#a6e22e">color</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;primary&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">span</span>&gt;101 Dialogflow App&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;spacer&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-icon-button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">mat-icon</span>&gt;refresh&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">mat-icon-button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">mat-icon</span>&gt;share&lt;/<span style="color:#f92672">mat-icon</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">mat-toolbar</span>&gt;
+</span></span></code></pre></div><ol start="9">
+<li>Add the spacer to the scss</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">spacer</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><ol start="10">
+<li>Edit the app.component.html</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">app-header</span>&gt;&lt;/<span style="color:#f92672">app-header</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">router-outlet</span>&gt;&lt;/<span style="color:#f92672">router-outlet</span>&gt;
+</span></span></code></pre></div><p># Backend</p>
+<ol>
+<li>npm init</li>
+<li>backend/app.js</li>
+<li>npm packages</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npm i @google-cloud/dialogflow express dotenv dialogflow-v2 @google-cloud/dialogflow-cx cors nodemon
+</span></span></code></pre></div><p><a href="https://www.npmjs.com/package/@google-cloud/dialogflow-cx"
+   title="https://www.npmjs.com/package/@google-cloud/dialogflow-cx" 
+   target="_blank" rel="nofollow noopener">
+  https://www.npmjs.com/package/@google-cloud/dialogflow-cx</a></p>
+<ol start="2">
+<li>code</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;dotenv&#39;</span>).<span style="color:#a6e22e">config</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dialogflow</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;@google-cloud/dialogflow-cx&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PORT</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CREDENTIALS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFileSync</span>(<span style="color:#e6db74">&#39;/Users/juanantonioestival/.keys/hospitality-demo-361210-a223fae5fb99.json&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">projectId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">CREDENTIALS</span>.<span style="color:#a6e22e">project_id</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">location</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;global&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">agentId</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;fcb0a3b6-8299-4a9d-87e0-3731db89eab2&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">query</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Estado de mi pedido&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">languageCode</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;es&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CONFIGURATION</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">credentials</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">private_key</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CREDENTIALS</span>[<span style="color:#e6db74">&#39;private_key&#39;</span>],
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">client_email</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CREDENTIALS</span>[<span style="color:#e6db74">&#39;client_email&#39;</span>]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> {<span style="color:#a6e22e">SessionsClient</span>} <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;@google-cloud/dialogflow-cx&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SessionsClient</span>(<span style="color:#a6e22e">CONFIGURATION</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hola&#39;</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/api/dialogflow&#39;</span>, <span style="color:#66d9ef">async</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">request</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">session</span><span style="color:#f92672">:</span><span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">projectLocationAgentSessionPath</span>(
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">projectId</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">location</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">agentId</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">sessionId</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">queryInput</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">queryText</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">languageCode</span><span style="color:#f92672">:</span><span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">languageCode</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">response</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">detectIntent</span>(<span style="color:#a6e22e">request</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">response</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">PORT</span>, ()=&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Server runing </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">PORT</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>To test in postman dialgofflow/express</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;queryText&#34;</span>:<span style="color:#e6db74">&#34;hola&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;languageCode&#34;</span>:<span style="color:#e6db74">&#34;ca&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;sessionId&#34;</span>:<span style="color:#e6db74">&#34;abcd1234&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p># Adding the Webservice call to pokemon api</p>
+<ol>
+<li>Generate the interface that will host the response of the api call</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng generate interafce pokemon
+</span></span></code></pre></div><p>Edit the interface</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Pokemon</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span>:<span style="color:#66d9ef">number</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">forms</span>:<span style="color:#66d9ef">Forms</span>[],
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">abilities</span>:<span style="color:#66d9ef">ability</span>[],
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">moves</span>:<span style="color:#66d9ef">move</span>[],
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">types</span>:<span style="color:#66d9ef">type</span>[],
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sprites</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">front_default</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">other</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">dream_world</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">front_default</span>:<span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Forms</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span>:<span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ability</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ability</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span>:<span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">url</span>:<span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">move</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">move</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">url</span>:<span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#66d9ef">type</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span>: <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>   
+</span></span></code></pre></div><ol start="2">
+<li>Edit the app.module</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">HttpClientModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/common/http&#39;</span>;
+</span></span></code></pre></div><ol start="3">
+<li>generate the service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng generate service pokemon
+</span></span></code></pre></div><ol start="4">
+<li>inject the http in the service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">HttpClient</span>, <span style="color:#a6e22e">HttpParams</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/common/http&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">http</span>: <span style="color:#66d9ef">HttpClient</span>) { }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="5">
+<li>Add a method called get to get pokemon info</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Pokemon</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./pokemon&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Observable</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;rxjs&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">environment</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../environments/environment&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">http</span>.<span style="color:#66d9ef">get</span>&lt;<span style="color:#f92672">Pokemon</span>&gt;(<span style="color:#a6e22e">environment</span>.<span style="color:#a6e22e">apiUrl</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;pokemon/&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">pokemon</span>);
+</span></span></code></pre></div><ol start="6">
+<li>edit the environment files to host the base url of pokemon api</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">environment</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">production</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">apiUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://pokeapi.co/api/v2/&#39;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><ol start="7">
+<li>Generate a component to show a pokemon card</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ng generate component components/Pokemon
+</span></span></code></pre></div><ol start="8">
+<li>Check the material elements in app.module</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatIconModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/icon&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatInputModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/input&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MatCardModule</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/material/card&#39;</span>
+</span></span></code></pre></div><ol start="9">
+<li>Edit the pokemon comonent</li>
+</ol>
+<ul>
+<li>Interface</li>
+<li>servcie</li>
+<li>constructor</li>
+<li>search</li>
+<li>Input</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Pokemon</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../../pokemon&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PokemonService</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../../pokemon.service&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pokemon</span>: <span style="color:#66d9ef">Pokemon</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">undefined</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">pokemonService</span>: <span style="color:#66d9ef">PokemonService</span>) { }
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">pokemon</span>: <span style="color:#66d9ef">string</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">pokemonService</span>.<span style="color:#a6e22e">getPokemon</span>(<span style="color:#a6e22e">pokemon</span>).<span style="color:#a6e22e">subscribe</span>(<span style="color:#a6e22e">pokemon</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">pokemon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pokemon</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>Full component code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span>, <span style="color:#a6e22e">Input</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Pokemon</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../../pokemon&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PokemonService</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;../../pokemon.service&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@Component</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-pokemon&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./pokemon.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./pokemon.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PokemonComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">@Input</span>() <span style="color:#a6e22e">item</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pokemon</span>: <span style="color:#66d9ef">Pokemon</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">undefined</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">samplePokemon</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;pikachu&#39;</span>, <span style="color:#e6db74">&#39;charmander&#39;</span>, <span style="color:#e6db74">&#39;raichu&#39;</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">private</span> <span style="color:#a6e22e">pokemonService</span>: <span style="color:#66d9ef">PokemonService</span>) { 
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">search</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">item</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">pokemonId</span>: <span style="color:#66d9ef">string</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`searching </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">pokemonId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">pokemonService</span>.<span style="color:#a6e22e">getPokemon</span>(<span style="color:#a6e22e">pokemonId</span>).<span style="color:#a6e22e">subscribe</span>(<span style="color:#a6e22e">pokemonreceived</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">pokemon</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pokemonreceived</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Template</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>      &lt;<span style="color:#f92672">mat-card</span> <span style="color:#960050;background-color:#1e0010">*</span><span style="color:#a6e22e">ngIf</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pokemon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">mat-card-header</span> &gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">mat-card-title</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span>&gt;Pokemon Name: &lt;/<span style="color:#f92672">span</span>&gt;{{ pokemon.name }}&lt;/<span style="color:#f92672">mat-card-title</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">mat-card-header</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">mat-card-subtitle</span>&gt;      
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">mat-card-subtitle</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">mat-card-content</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">img</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">mat-card-image</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ pokemon.sprites.other.dream_world.front_default }}&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Pokemon Image&#34;</span>
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">mat-card-content</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">mat-card</span>&gt;
+</span></span></code></pre></div><ol start="9">
+<li>Edit homescreen to show 4 random pokemons</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">@Component</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-home-screen&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./home-screen.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./home-screen.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeScreenComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentItem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pikachu&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">currentItem2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;charmander&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">500</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">items</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>() { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">items</span> <span style="color:#f92672">=</span> Array.<span style="color:#66d9ef">from</span>({<span style="color:#a6e22e">length</span>: <span style="color:#66d9ef">4</span>}, () <span style="color:#f92672">=&gt;</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">400</span>));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">createRange</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">items</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Template</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">*</span><span style="color:#a6e22e">ngFor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;let test of createRange(); let currentElementIndex&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">app-pokemon</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">item</span><span style="color:#960050;background-color:#1e0010">]=&#34;(</span><span style="color:#a6e22e">test</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">toString</span><span style="color:#960050;background-color:#1e0010">())&#34;</span>&gt;&lt;/<span style="color:#f92672">app-pokemon</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;   
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h1 id="add-the-servie-to-call-df-api">Add the servie to call DF API</h1>
+<h3 id="pd">pd</h3>
+<p>38</p>
+<p>I had the same problem. I solved it by following those steps :</p>
+<p>1/ First, you have to connect your firebase account &gt; firebase login</p>
+<p>2/ Next, check if the connection is alright (you need to create your project on firebase in a first place to see it in the result) &gt; firebase projects:list</p>
+<p>3/ Then, you need to initialize firebase &gt; firebase init</p>
+<p>4/ And now you can add the following command &gt; ng add @angular/fire</p>
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 03 Apr 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                                               
+                     
+                          
+              
+                  
+                                
+              
+                                    
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+              
+                                    
+              
+                                    
+                         
+                         
+              
+                                    
+              
+                                    
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+              
+                                    
+                         
+              
+              
+                                                 
+              
+              
+                                                 
+              
+              
+                                    
+                         
+              
+                                    
+              
+                                      
+              
+                                      
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Angular calling DF API using express</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/angular/angularsamples/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">Angular Samples</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+
+  </body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular for Dialogflow on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/angular/angularfordf/</link>
+    <description>Recent content in Angular for Dialogflow on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/angular/angularfordf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular calling DF API using express</title>
+      <link>https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularfordf/angularcallingexpressapi/</guid>
+      <description>Call to express server API to invoke DF detectIntent https://expressjs.com/en/resources/middleware/cors.html
+ Create an interface that will be used to recive the body in json of the request  export interface DFRequest {  queryText:string,  languageCode:string,  sessionId:string  } the service will use the interface type to receive the request mi interpretacion. la función devuelve un observable DEntro de ese observable irá la respuesta de la api que de momento es de tipo any  import { Injectable, OnInit } from &amp;#39;@angular/core&amp;#39;; import { HttpClient, HttpParams } from &amp;#39;@angular/common/http&amp;#39;; import { Observable } from &amp;#39;rxjs&amp;#39;; import { environment } from &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Angular Website Base for DF Projects</title>
+      <link>https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularfordf/angularfordfbasicwebsite/</guid>
+      <description>Base Angular app Resources https://www.youtube.com/watch?v=dFN79tEr_bc https://stackoverflow.com/questions/58813245/401-unauthenticated-for-detect-intent-dialogflow https://chatbotslife.com/dialogflow-v2-rest-api-communication-6cf7ab66ab36 https://www.npmjs.com/package/google-oauth-jwt https://www.npmjs.com/package/@google-cloud/dialogflow-cx https://github.com/googleapis/nodejs-dialogflow-cx/blob/main/samples/detect-intent-event.js
+ Create angular app  new df-101-app --style=scss --routing=true Add Material dependendies. We will use routing  ng add @angular/material --theme indigo-pink --typography true --animations true Add the HomeScreen  ng g c screens/HomeScreen Edit app-routing module with a route to home screen  import { HomeScreenComponent } from &amp;#39;./screens/home-screen/home-screen.component&amp;#39;; const routes: Routes = [  { path: &amp;#39;home-screen&amp;#39;, component: HomeScreenComponent }, ]; Install http server.</description>
+    </item>
+    
+  </channel>
+</rss>

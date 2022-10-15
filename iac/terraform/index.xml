@@ -19,6 +19,19 @@ brew --version Install Terraform brew tap hashicorp/tap brew install hashicorp/t
     </item>
     
     <item>
+      <title>Terraform  101</title>
+      <link>https://architect.proyectoomega.es/iac/terraform/terraform101/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/iac/terraform/terraform101/</guid>
+      <description>Basics of terraform and the use with gcloud gcloud cli tips gcloud organizations list This returns name and id
+DISPLAY_NAME ID DIRECTORY_CUSTOMER_ID your-org 555555555 ndo9dno3 List the folders
+gcloud resource-manager folders list --organization 555555555 To list a subfolder of a folder
+gcloud resource-manager folders list --folder=555555555 json format gcloud resource-manager folders list --folder=555555555 --format=json extracta vaule
+gcloud resource-manager folders list --folder=555555555 --format=json | grep name | awk -F&amp;#39; &amp;#39; &amp;#39;{print $2}&amp;#39; | awk -F&amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $2}&amp;#39; folders/555555555 another way to get only the id</description>
+    </item>
+    
+    <item>
       <title>Terraform  GCP Cloud Functions</title>
       <link>https://architect.proyectoomega.es/iac/terraform/terraformcloudfunctions/</link>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
@@ -62,9 +75,9 @@ gcloud auth application-default login </description>
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
       
       <guid>https://architect.proyectoomega.es/iac/terraform/terraformmodules/</guid>
-      <description>Intro The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
- VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.
-The idea is that it will be a variable that will replace the CIDR blocks acording the environment.</description>
+      <description>Intro new
+ create a modules folder and inside folder with a descriptive name of the module the main folder and the desireded module folder should have a main.ft  old The use of modules will allow to write less code and to reuse the resource creation in several environments. I am going to create a module which setup the following resources
+ VPC Public Subnet Private Subnet Internet Gateway  Once the module is created it can be used to deploy Production and Staging environments without the need to repeat the code for those envirroments.</description>
     </item>
     
   </channel>
