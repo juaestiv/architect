@@ -24,7 +24,14 @@ gcloud compute instances create asterisks \  --project=hospitality-demo-361210 \
       <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
       
       <guid>https://architect.proyectoomega.es/gcloud/cli/gcloud101/</guid>
-      <description>Superbasic commands # List billing accounts available gcloud beta billing accounts list The user must to have privileges</description>
+      <description>Superbasic commands https://gist.github.com/pydevops/cffbd3c694d599c6ca18342d3625af97
+# List billing accounts available gcloud beta billing accounts list The user must to have privileges
+List projects
+gcloud project list Current project
+gcloud config list Just org id
+gcloud organizations list --format=&amp;#39;value(ID)&amp;#39; List folders
+cloud resource-manager folders list --organization $(gcloud organizations list --format=&amp;#39;value(ID)&amp;#39;) gcloud resource-manager folders list --organization $(gcloud organizations list --format=&amp;#39;value(ID)&amp;#39;) --filter=&amp;#39;Development&amp;#39; Get the Id of Development folder
+cloud resource-manager folders list --organization $(gcloud organizations list --format=&amp;#39;value(ID)&amp;#39;) --filter=&amp;#39;Development&amp;#39; --format=&amp;#39;value(ID)&amp;#39; </description>
     </item>
     
     <item>
