@@ -21,6 +21,15 @@ Create the app  Create an application with routing Common steps   material confi
     </item>
     
     <item>
+      <title>Angular NGRX State management</title>
+      <link>https://architect.proyectoomega.es/angular/angularsamples/angularngrxstate/</link>
+      <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/angular/angularsamples/angularngrxstate/</guid>
+      <description>Install the ngrx package and the devtools for their use with chrome extensio  ng add @ngrx/store@latest ng add @ngrx/store-devtools@latest Review changes in app.module.ts. There should be the import of the StoreModule and the entry in the import section. It will be needed to modifiy this section later on  import { StoreModule } from &amp;#39;@ngrx/store&amp;#39;;  imports: [  BrowserModule,  AppRoutingModule,  StoreModule.forRoot({}, {})  ], Create counter.</description>
+    </item>
+    
+    <item>
       <title>Angular Pokemon</title>
       <link>https://architect.proyectoomega.es/angular/angularsamples/angularpokemon/</link>
       <pubDate>Sun, 09 Oct 2022 08:16:01 +0200</pubDate>
