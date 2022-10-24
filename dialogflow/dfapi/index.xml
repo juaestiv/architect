@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dialogflow API on Solutions Architect Resources</title>
+    <link>https://architect.proyectoomega.es/dialogflow/dfapi/</link>
+    <description>Recent content in Dialogflow API on Solutions Architect Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/dialogflow/dfapi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dialogflow API Postman </title>
+      <link>https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/</guid>
+      <description>Open Postman Create a Post/get Request From Authorization folder choose OAUTh 2.0 Autenticate with user owner and password Click on use token  Example of GET requests List Agents This is an example of list agentes GET https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/
+Example of POST Request
+Agent Intents belongs to sessions POSR https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions
+{  &amp;#34;queryInput&amp;#34;: {  &amp;#34;text&amp;#34;: {  &amp;#34;text&amp;#34;: &amp;#34;HELLO&amp;#34;  },  &amp;#34;languageCode&amp;#34;: &amp;#34;en&amp;#34;  },  &amp;#34;queryParams&amp;#34;: {  &amp;#34;timeZone&amp;#34;: &amp;#34;America/Los_Angeles&amp;#34;  } } Answer</description>
+    </item>
+    
+  </channel>
+</rss>

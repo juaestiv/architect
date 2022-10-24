@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+
+
+  
+  
+    
+  
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F41GEVVR9Y');
+</script>
+
+  
+
+
+
+<link rel="canonical" href="https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/" />
+
+
+  <meta charset="utf-8" />
+  <title>Dialogflow API Postman </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="description" content="Dialogflow API Postman  - This a website for cloud architects to find usefull resources. Created by Juan Antonio Estival to help others with snipets of aws, gcp, terraform, static websties, react and others " />
+  <meta name="keywords" content="gcloud,, google, cloud, platform,, gcp,, remote, development,, juan, antonio, estival">
+ 
+  
+  
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.css"
+  />
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://architect.proyectoomega.es/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://architect.proyectoomega.es/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#006385;
+      --body-color:#d2e0ce;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Nunito;
+    }
+  </style>
+
+  
+  
+  <link href="https://architect.proyectoomega.es/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://architect.proyectoomega.es/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F41GEVVR9Y"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F41GEVVR9Y', { 'anonymize_ip': false });
+}
+</script>
+ 
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Dialogflow API Postman " />
+  <meta
+    name="twitter:description"
+    content="Open Postman Create a Post/get Request From Authorization folder choose OAUTh 2.0 Autenticate with user owner and password Click on use token  Example of GET requests List Agents This is an example of list agentes GET https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/
+Example of POST Request
+Agent Intents belongs to sessions POSR https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions
+{  &#34;queryInput&#34;: {  &#34;text&#34;: {  &#34;text&#34;: &#34;HELLO&#34;  },  &#34;languageCode&#34;: &#34;en&#34;  },  &#34;queryParams&#34;: {  &#34;timeZone&#34;: &#34;America/Los_Angeles&#34;  } } Answer"
+  />
+    <meta property="og:title" content="Dialogflow API Postman " />
+<meta property="og:description" content="Open Postman Create a Post/get Request From Authorization folder choose OAUTh 2.0 Autenticate with user owner and password Click on use token  Example of GET requests List Agents This is an example of list agentes GET https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/
+Example of POST Request
+Agent Intents belongs to sessions POSR https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions
+{  &#34;queryInput&#34;: {  &#34;text&#34;: {  &#34;text&#34;: &#34;HELLO&#34;  },  &#34;languageCode&#34;: &#34;en&#34;  },  &#34;queryParams&#34;: {  &#34;timeZone&#34;: &#34;America/Los_Angeles&#34;  } } Answer" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/" /><meta property="article:section" content="dialogFlow" />
+<meta property="article:published_time" content="2022-04-03T08:16:01+02:00" />
+<meta property="article:modified_time" content="2022-04-03T08:16:01+02:00" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dialogflow API Postman "/>
+<meta name="twitter:description" content="Open Postman Create a Post/get Request From Authorization folder choose OAUTh 2.0 Autenticate with user owner and password Click on use token  Example of GET requests List Agents This is an example of list agentes GET https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/
+Example of POST Request
+Agent Intents belongs to sessions POSR https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions
+{  &#34;queryInput&#34;: {  &#34;text&#34;: {  &#34;text&#34;: &#34;HELLO&#34;  },  &#34;languageCode&#34;: &#34;en&#34;  },  &#34;queryParams&#34;: {  &#34;timeZone&#34;: &#34;America/Los_Angeles&#34;  } } Answer"/>
+
+
+
+  
+  
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vielkalahizo"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/uno"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/saltstar"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jabore">
+
+  <link rel="stylesheet" href="https://architect.proyectoomega.es/css/foo.css"><link rel="stylesheet" href="https://architect.proyectoomega.es/css/bar.css">
+</head>
+
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      Solutions Architect Resources
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://architect.proyectoomega.es/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/blogcategory">Sample Blog Category</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            building
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/building">Building</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            links
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://architect.proyectoomega.es/links">Links</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                             
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/dialogflow/"
+  title="Dialogflow"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/dialogflow/">
+    Dialogflow
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/dialogflow/dfapi/"
+  title="Dialogflow API"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/dialogflow/dfapi/">
+    Dialogflow API
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/"
+  title="Dialogflow API Postman "
+  class="sidelist
+  active"
+>
+  <a href="https://architect.proyectoomega.es/dialogflow/dfapi/dfapipostman/">
+    Dialogflow API Postman 
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+           
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/dialogflow/dfsampleevents/"
+  title="Dialogflow Events"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/dialogflow/dfsampleevents/">
+    Dialogflow Events
+  </a>
+   
+  <ul>
+            
+ 
+<li
+  data-nav-id="https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/"
+  title="Dialogflow Event with Params"
+  class="sidelist
+  "
+>
+  <a href="https://architect.proyectoomega.es/dialogflow/dfsampleevents/dfeventparams/">
+    Dialogflow Event with Params
+  </a>
+   
+</li>
+   
+  </ul>
+  
+</li>
+   
+  </ul>
+  
+</li>
+                  
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Dialogflow API Postman </h2>
+          
+          <div class="content"><ol>
+<li>Open Postman</li>
+<li>Create a Post/get Request</li>
+<li>From Authorization folder choose OAUTh 2.0</li>
+<li>Autenticate with user owner and password</li>
+<li>Click on use token</li>
+</ol>
+<p>Example of GET requests
+List Agents
+This is an example of list agentes
+GET <a href="https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/"
+   title="https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/" 
+   target="_blank" rel="nofollow noopener">
+  https://global-dialogflow.googleapis.com/v3/projects/hospitality-demo-361210/locations/global/agents/</a></p>
+<p>Example of POST Request</p>
+<p>Agent Intents belongs to sessions
+POSR <a href="https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions"
+   title="https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions" 
+   target="_blank" rel="nofollow noopener">
+  https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.environments.sessions</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;queryInput&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;text&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;HELLO&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;languageCode&#34;</span>: <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;queryParams&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;timeZone&#34;</span>: <span style="color:#e6db74">&#34;America/Los_Angeles&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Answer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;responseId&#34;</span>: <span style="color:#e6db74">&#34;ea71d3ac-e776-4468-8beb-84ae94539cf4&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;queryResult&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;Hello&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;languageCode&#34;</span>: <span style="color:#e6db74">&#34;en&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;last_name&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;channel&#34;</span>: <span style="color:#e6db74">&#34;chat&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;customerverified&#34;</span>: <span style="color:#e6db74">&#34;not-set&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;responseMessages&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;text&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;text&#34;</span>: [
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                    ]
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;payload&#34;</span>: {}
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {}
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;webhookPayloads&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {}
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;currentPage&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;projects/hospitality-demo-361210/locations/global/agents/fcb0a3b6-8299-4a9d-87e0-3731db89eab2/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Start Page&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;intent&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;projects/hospitality-demo-361210/locations/global/agents/fcb0a3b6-8299-4a9d-87e0-3731db89eab2/intents/00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Default Welcome Intent&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;intentDetectionConfidence&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;diagnosticInfo&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Session Id&#34;</span>: <span style="color:#e6db74">&#34;12345678&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Execution Sequence&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Step 1&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;InitialState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;FlowId&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Default Start Flow&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;PageState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;PageId&#34;</span>: <span style="color:#e6db74">&#34;START_PAGE&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Start Page&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;TRANSITION_ROUTING&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                            },
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;MatchedIntent&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Id&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;NLU&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Active&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Score&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;DisplayName&#34;</span>: <span style="color:#e6db74">&#34;Default Welcome Intent&#34;</span>
+</span></span><span style="display:flex;"><span>                            },
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;SessionParameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;channel&#34;</span>: <span style="color:#e6db74">&#34;chat&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;customerverified&#34;</span>: <span style="color:#e6db74">&#34;not-set&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;last_name&#34;</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;INITIAL_STATE&#34;</span>
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Step 2&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;STATE_MACHINE&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;StateMachine&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TriggeredIntent&#34;</span>: <span style="color:#e6db74">&#34;Default Welcome Intent&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowLevelTransition&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TriggeredCondition&#34;</span>: <span style="color:#e6db74">&#34;true&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;FlowId&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;PageState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;TRANSITION_ROUTING&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Start Page&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;PageId&#34;</span>: <span style="color:#e6db74">&#34;START_PAGE&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Default Start Flow&#34;</span>
+</span></span><span style="display:flex;"><span>                            },
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TriggeredTransitionRouteId&#34;</span>: <span style="color:#e6db74">&#34;aedea5a9-9b3a-43c3-8206-c89685bf415c&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TargetPage&#34;</span>: <span style="color:#e6db74">&#34;abbd0d46-a3d3-41ee-acb2-04fbd2ec535f&#34;</span>
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;FunctionExecution&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;Responses&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;text&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;text&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ],
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;redactedText&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ]
+</span></span><span style="display:flex;"><span>                                    }
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;payload&#34;</span>: {},
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>
+</span></span><span style="display:flex;"><span>                                }
+</span></span><span style="display:flex;"><span>                            ]
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Step 3&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;FunctionExecution&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;Responses&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;text&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;redactedText&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ],
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;text&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ]
+</span></span><span style="display:flex;"><span>                                    },
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;payload&#34;</span>: {},
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>
+</span></span><span style="display:flex;"><span>                                }
+</span></span><span style="display:flex;"><span>                            ],
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;Webhook&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Latency&#34;</span>: <span style="color:#e6db74">&#34;67 ms&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Unauthorized FulfillmentResponse&#34;</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;URL&#34;</span>: <span style="color:#e6db74">&#34;https://us-central1-hospitality-demo-361210.cloudfunctions.net/dialogflow-main-wh&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;OK&#34;</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;StateMachine&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;FlowId&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Default Start Flow&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;PageState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;PageId&#34;</span>: <span style="color:#e6db74">&#34;abbd0d46-a3d3-41ee-acb2-04fbd2ec535f&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Check Channel&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;ENTERING_PAGE&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;STATE_MACHINE&#34;</span>
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Step 4&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;StateMachine&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;FlowId&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;PageState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;TRANSITION_ROUTING&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Check Channel&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;PageId&#34;</span>: <span style="color:#e6db74">&#34;abbd0d46-a3d3-41ee-acb2-04fbd2ec535f&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;FormFilled&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Default Start Flow&#34;</span>
+</span></span><span style="display:flex;"><span>                            },
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TargetPage&#34;</span>: <span style="color:#e6db74">&#34;START_PAGE&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TriggeredTransitionRouteId&#34;</span>: <span style="color:#e6db74">&#34;978d2fbb-5dca-4b55-9131-fd3e38c708b5&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;TriggeredCondition&#34;</span>: <span style="color:#e6db74">&#34;$session.params.channel = chat&#34;</span>
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;STATE_MACHINE&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;FunctionExecution&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;Responses&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;text&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;redactedText&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ],
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">&#34;text&#34;</span>: [
+</span></span><span style="display:flex;"><span>                                            <span style="color:#e6db74">&#34;Hello! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>                                        ]
+</span></span><span style="display:flex;"><span>                                    },
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;payload&#34;</span>: {},
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;HANDLER_PROMPT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;VIRTUAL_AGENT&#34;</span>
+</span></span><span style="display:flex;"><span>                                }
+</span></span><span style="display:flex;"><span>                            ]
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Step 5&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;STATE_MACHINE&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;StateMachine&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;FlowState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;PageState&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;PageId&#34;</span>: <span style="color:#e6db74">&#34;START_PAGE&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Start Page&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#f92672">&#34;Status&#34;</span>: <span style="color:#e6db74">&#34;TRANSITION_ROUTING&#34;</span>
+</span></span><span style="display:flex;"><span>                                },
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;Default Start Flow&#34;</span>,
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;FlowId&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Webhook Latencies (ms)&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#ae81ff">67</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Alternative Matched Intents&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;DisplayName&#34;</span>: <span style="color:#e6db74">&#34;Default Welcome Intent&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;NLU&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Active&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Id&#34;</span>: <span style="color:#e6db74">&#34;00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;Score&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Transition Targets Chain&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;TargetPage&#34;</span>: <span style="color:#e6db74">&#34;abbd0d46-a3d3-41ee-acb2-04fbd2ec535f&#34;</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;TargetPage&#34;</span>: <span style="color:#e6db74">&#34;START_PAGE&#34;</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Triggered Transition Names&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;aedea5a9-9b3a-43c3-8206-c89685bf415c&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;978d2fbb-5dca-4b55-9131-fd3e38c708b5&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;webhookStatuses&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {}
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;match&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;intent&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;projects/hospitality-demo-361210/locations/global/agents/fcb0a3b6-8299-4a9d-87e0-3731db89eab2/intents/00000000-0000-0000-0000-000000000000&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Default Welcome Intent&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;resolvedInput&#34;</span>: <span style="color:#e6db74">&#34;Hello&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;matchType&#34;</span>: <span style="color:#e6db74">&#34;INTENT&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;confidence&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;responseType&#34;</span>: <span style="color:#e6db74">&#34;FINAL&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 03 Apr 2022
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                                             
+                         
+              
+                                    
+                         
+                         
+              
+                                    
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+              
+                                    
+              
+                                    
+                         
+                         
+              
+                                    
+              
+                                    
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+                         
+                         
+              
+              
+                                                 
+                         
+                         
+                         
+              
+                                    
+                         
+              
+              
+                                                    
+              
+                  
+                                
+              
+              
+                                                 
+              
+              
+                                    
+                         
+              
+                                    
+              
+                                      
+              
+                                      
+              
+                                                 
+              
+              
+                
+            <a
+              class="nav nav-prev"
+              href="https://architect.proyectoomega.es/dialogflow/dfapi/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Dialogflow API</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://architect.proyectoomega.es/dialogflow/dfsampleevents/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">Dialogflow Events</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4">Proyecto Omega</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://architect.proyectoomega.es/js/script.min.js"></script>
+
+
+  </body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K6JCB8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  </html>
