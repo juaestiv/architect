@@ -385,12 +385,6 @@ if (!doNotTrack) {
           	},
           	
           	{
-          		value: "ddddd",
-          		label: "<p>Appsync </p><p>hugo</p><p>seo</p><p>juan antonio estival</p><p>estival</p><p>aws estival</p><p>google estival</p><p>gcp estival</p><p>cloud solutions architect</p><p>solution architect spain</p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/appsyncmock\/"
-          	},
-          	
-          	{
           		value: "Dialogflow",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/dialogflow\/"
@@ -409,6 +403,12 @@ if (!doNotTrack) {
           	},
           	
           	{
+          		value: "Docker",
+          		label: "<p></p><p>gcloud,</p><p>docker,</p><p>angular,google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/docker\/"
+          	},
+          	
+          	{
           		value: "gCloud Basic Commands",
           		label: "<p>Superbasic commands https:\/\/gist.github.com\/pydevops\/cffbd3c694d599c6ca18342d3625af97\n# List billing accounts available gcloud beta billing accounts list The user must to have privileges\nList projects\ngcloud project list Current project\ngcloud config list Just org id\ngcloud organizations list --format=\u0026#39;value(ID)\u0026#39; List folders\ncloud resource-manager folders list --organization $(gcloud organizations list --format=\u0026#39;value(ID)\u0026#39;) gcloud resource-manager folders list --organization $(gcloud organizations list --format=\u0026#39;value(ID)\u0026#39;) --filter=\u0026#39;Development\u0026#39; Get the Id of Development folder\ncloud resource-manager folders list --organization $(gcloud organizations list --format=\u0026#39;value(ID)\u0026#39;) --filter=\u0026#39;Development\u0026#39; --format=\u0026#39;value(ID)\u0026#39; </p><p>gcloud,cli,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/gcloud101\/"
@@ -418,6 +418,12 @@ if (!doNotTrack) {
           		value: "gCloud Usefull commadns",
           		label: "<p>Some usefull commands gcloud organizations list This returns name and id:\nDISPLAY_NAME ID DIRECTORY_CUSTOMER_ID your-org 555555555 ndo9dno3 List the folders\ngcloud resource-manager folders list --organization 555555555 To list a subfolder of a folder\ngcloud resource-manager folders list --folder=555555555 json format gcloud resource-manager folders list --folder=555555555 --format=json extract value\ngcloud resource-manager folders list --folder=555555555 --format=json | grep name | awk -F\u0026#39; \u0026#39; \u0026#39;{print $2}\u0026#39; | awk -F\u0026#39;\u0026#34;\u0026#39; \u0026#39;{print $2}\u0026#39; folders\/555555555 another way to get only the id\ngcloud resource-manager folders list --folder=777777 --format=json | grep name | awk -F\u0026#39; \u0026#39; \u0026#39;{print $2}\u0026#39; | awk -F\u0026#39;\u0026#34;\u0026#39; \u0026#39;{print $2}\u0026#39; | sed \u0026#39;s|folders\/||\u0026#39; export WORKING_FOLDER=$(gcloud resource-manager folders list --folder=777777 --format=json | grep name | awk -F\u0026#39; \u0026#39; \u0026#39;{print $2}\u0026#39; | awk -F\u0026#39;\u0026#34;\u0026#39; \u0026#39;{print $2}\u0026#39; | sed \u0026#39;s|folders\/||\u0026#39;) </p><p>gcloud,cli,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/gcloudsnippetcommands\/"
+          	},
+          	
+          	{
+          		value: "PostgreSQL",
+          		label: "<p>Recall \/\/list all images docker image ls docker ps  \/\/shows runing containers docker container ls  \/\/shows all containers docker container ls -a Install psql client\nbrew install postgresql Create a docker container with a yaml file touch docker-compose.yml Edit\nversion: \u0026#34;3\u0026#34; services:  db:  image: postgres  restart: unless-stopped  container_name: \u0026#34;my_postgres\u0026#34;  ports:  - \u0026#34;5432:5432\u0026#34;  environment:  POSTGRES_USER: postgres  POSTGRES_PASSWORD: SuperSecret!23  volumes:  - .docker-data\/postgres:\/var\/lib\/postgresql\/data volumes:  my_dbdata: To run the container\ndocker compose up -d List runing containes\ndocker container ls CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES fb7050ec814e postgres \u0026#34;docker-entrypoint.s…\u0026#34; 16 seconds ago Up 14 seconds 0.0.0.0:5432-\u0026gt;5432\/tcp 101-docker-postgresql-db-1 List images\ndocker image ls REPOSITORY TAG IMAGE ID CREATED SIZE postgres latest 027eba2e8939 3 days ago 377MB   juanantonioestival@MBP-de-Juan  ~\/github\/101-docker-postgresql  To stop the postgresl server\ndocker composer down This delete the containers but not the image\nTo access the docker\ndocker exec -it my_postgres psql -U postgres Then connect to postgres\npsql -h 127.0.0.1 -U postgres list tables\n\\l List the local volume\ndocker volume ls </p><p>gcloud,</p><p>docker,</p><p>postgresql,</p><p>angular,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/docker\/dockerquickrecipes\/dockerpostgresql\/"
           	},
           	
           	{
@@ -565,6 +571,12 @@ if (!doNotTrack) {
           	},
           	
           	{
+          		value: "Docker Quick Recipes",
+          		label: "<p></p><p>gcloud,</p><p>docker,</p><p>angular,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
+          		url:"https:\/\/architect.proyectoomega.es\/docker\/dockerquickrecipes\/"
+          	},
+          	
+          	{
           		value: "gCloud CLI",
           		label: "<p></p>",
           		url:"https:\/\/architect.proyectoomega.es\/gcloud\/cli\/"
@@ -574,12 +586,6 @@ if (!doNotTrack) {
           		value: "Oh My ZSH",
           		label: "<p>## Tips and tricks\nsh -c \u0026#34;$(curl -fsSL https:\/\/raw.githubusercontent.com\/robbyrussell\/oh-my-zsh\/master\/tools\/install.sh)\u0026#34; edit .zshrc theme agnoster\nadd two additionals plugins\nzsh-syntax-highlighting zsh-autosuggestions\nFonts https:\/\/github.com\/lxbrtsch\/Menlo-for-Powerline download the fourth and install them\nedit the terminal with black background and Menlo for Powerline fonts\n</p><p>gcloud,</p><p>ZSH,</p><p>google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/tools\/ohmyzsh\/"
-          	},
-          	
-          	{
-          		value: "On top of the tree",
-          		label: "<p>I am some text UUUU\n</p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/subject\/"
           	},
           	
           	{
@@ -622,12 +628,6 @@ if (!doNotTrack) {
           		value: "Tools",
           		label: "<p></p><p>gcloud,</p><p>python,google</p><p>cloud</p><p>platform,</p><p>gcp,</p><p>remote</p><p>development,</p><p>juan</p><p>antonio</p><p>estival</p>",
           		url:"https:\/\/architect.proyectoomega.es\/tools\/"
-          	},
-          	
-          	{
-          		value: "What apperas in box",
-          		label: "<p></p>",
-          		url:"https:\/\/architect.proyectoomega.es\/blogcategory\/"
           	},
           	
           	{
@@ -731,6 +731,16 @@ if (!doNotTrack) {
           </div>
         
           <div class="col-lg-3 col-sm-6 mb-4">
+            <a href="https://architect.proyectoomega.es/docker/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-world icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Docker</h3>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-3 col-sm-6 mb-4">
             <a href="https://architect.proyectoomega.es/react/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
               
                 <i class="ti-world icon text-primary d-block mb-4"></i>
@@ -776,16 +786,6 @@ if (!doNotTrack) {
                 <i class="ti-world icon text-primary d-block mb-4"></i>
               
               <h3 class="mb-3 mt-0">Tools</h3>
-              
-            </a>
-          </div>
-        
-          <div class="col-lg-3 col-sm-6 mb-4">
-            <a href="https://architect.proyectoomega.es/blogcategory/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-              
-                <i class="ti-world icon text-primary d-block mb-4"></i>
-              
-              <h3 class="mb-3 mt-0">What apperas in box</h3>
               
             </a>
           </div>

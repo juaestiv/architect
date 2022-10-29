@@ -122,11 +122,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://architect.proyectoomega.es/blogcategory/subject/appsyncmock/</loc>
-    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://architect.proyectoomega.es/dialogflow/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -142,12 +137,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/docker/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/gcloud/cli/gcloud101/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/gcloud/cli/gcloudsnippetcommands/</loc>
+    <lastmod>2022-04-03T08:16:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://architect.proyectoomega.es/docker/dockerquickrecipes/dockerpostgresql/</loc>
     <lastmod>2022-04-03T08:16:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -272,17 +277,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://architect.proyectoomega.es/docker/dockerquickrecipes/</loc>
+    <lastmod>2022-04-03T08:15:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://architect.proyectoomega.es/gcloud/cli/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://architect.proyectoomega.es/tools/ohmyzsh/</loc>
-    <lastmod>2022-04-03T08:15:00+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://architect.proyectoomega.es/blogcategory/subject/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -319,11 +324,6 @@
   </url><url>
     <loc>https://architect.proyectoomega.es/tools/</loc>
     <lastmod>2022-04-03T08:15:00+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://architect.proyectoomega.es/blogcategory/</loc>
-    <lastmod>2022-02-16T11:20:26+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

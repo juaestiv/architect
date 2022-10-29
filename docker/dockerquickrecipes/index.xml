@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker Quick Recipes on Juan Antonio Estival - Solutions Architect</title>
+    <link>https://architect.proyectoomega.es/docker/dockerquickrecipes/</link>
+    <description>Recent content in Docker Quick Recipes on Juan Antonio Estival - Solutions Architect</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Proyecto Omega</copyright>
+    <lastBuildDate>Sun, 03 Apr 2022 08:15:00 +0200</lastBuildDate><atom:link href="https://architect.proyectoomega.es/docker/dockerquickrecipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PostgreSQL</title>
+      <link>https://architect.proyectoomega.es/docker/dockerquickrecipes/dockerpostgresql/</link>
+      <pubDate>Sun, 03 Apr 2022 08:16:01 +0200</pubDate>
+      
+      <guid>https://architect.proyectoomega.es/docker/dockerquickrecipes/dockerpostgresql/</guid>
+      <description>Recall //list all images docker image ls docker ps  //shows runing containers docker container ls  //shows all containers docker container ls -a Install psql client
+brew install postgresql Create a docker container with a yaml file touch docker-compose.yml Edit
+version: &amp;#34;3&amp;#34; services:  db:  image: postgres  restart: unless-stopped  container_name: &amp;#34;my_postgres&amp;#34;  ports:  - &amp;#34;5432:5432&amp;#34;  environment:  POSTGRES_USER: postgres  POSTGRES_PASSWORD: SuperSecret!23  volumes:  - .</description>
+    </item>
+    
+  </channel>
+</rss>
